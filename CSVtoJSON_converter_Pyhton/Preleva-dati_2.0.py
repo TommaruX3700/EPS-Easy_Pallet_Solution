@@ -34,14 +34,14 @@ if __name__=="__main__":
         logger.setLevel(log_level)
         handler = TimedRotatingFileHandler(log_file, when="d", interval=1, backupCount=5)
         logger.addHandler(handler)
-        logger.error("{0} {1:30s}\t".format(dt.strftime("%Y-%m-%d %H:%M:%S %z"),"Directory di logger non esistente"),exc_info=stampa_stack)
+        logger.error("{0} {1:30s}\t".format(dt.strftime("%Y-%m-%d %H:%M:%S %z"),"Directory dei file .log non esistente"),exc_info=stampa_stack)
     # assegno l'handler al demone
     logger.addHandler(handler)
     try:
         uscita= pd.read_csv(config['cartelle']['FILENAME1'], delimiter=";",usecols=["NUM_SPEDIZIONE","NUMERO_COLLO","CODICE_CLIENTE","PESO_NETTO","PESO_LORDO","BASE_MAGGIORE","BASE_MINORE","ALTEZZA","FLAG_PALETTIZZABILE","FLAG_SOVRAPPONIBILE","FLAG_RUOTABILE"])
         uscita= uscita.fillna("")
-        uscita.to_json(config['cartelle']['OUT'],orient='index')
+        uscita.to_json(config['cartelle']['OUT'],orient='index', indent=4)
         logger.debug("{0} {1:30s}\t".format(dt.strftime("%Y-%m-%d %H:%M:%S %z"),"Eseguito trasferimento correttamente."))
         # gestisco l'errore di filenotfound riguardante il csv
     except FileNotFoundError as err:
-        logger.error("{0} {1:30s}\t".format(dt.strftime("%Y-%m-%d %H:%M:%S %z"),"File csv non esistente o folder sbagliata"),exc_info=stampa_stack)
+        logger.error("{0} {1:30s}\t".format(dt.strftime("%Y-%m-%d %H:%M:%S %z"),"File csv non esistente o cartella non localizzata"),exc_info=stampa_stack)
