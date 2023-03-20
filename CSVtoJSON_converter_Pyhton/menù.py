@@ -8,6 +8,7 @@ input = ""
 uscita = ""
 cfg = ""
 
+#sesso anale
 
 def diruscita():
     global uscita
