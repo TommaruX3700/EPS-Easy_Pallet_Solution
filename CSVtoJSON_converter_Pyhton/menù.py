@@ -29,6 +29,9 @@ def dirlog():
 def stop():
     global nomefile
     nomefile = simpledialog.askstring(title="Nome file di uscita",prompt="Inserire il nome del file di optput:")
+    if(nomefile==""):
+        messagebox.showerror ("Attenzione", "nessun nome file applicato, verrà utilizzato 'default.json'")
+        nomefile='default'
     time.sleep(1)
     messagebox.showinfo("Info","Impostazioni Applicate")
     finestra.destroy()
