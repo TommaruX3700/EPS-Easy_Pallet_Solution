@@ -1,14 +1,16 @@
 from tkinter import *
+import time
 import PySimpleGUI as sg
 from tkinter import filedialog
 from tkinter import messagebox
 from tkinter import filedialog
+from tkinter import simpledialog
 log = ""
 input = ""
 uscita = ""
 cfg = ""
+nomefile = ""
 
-#sesso anale
 
 def diruscita():
     global uscita
@@ -25,6 +27,9 @@ def dirlog():
 
 
 def stop():
+    global nomefile
+    nomefile = simpledialog.askstring(title="Nome file di uscita",prompt="Inserire il nome del file di optput:")
+    time.sleep(1)
     messagebox.showinfo("Info","Impostazioni Applicate")
     finestra.destroy()
 
@@ -44,6 +49,8 @@ selezione3 = Button(text="Seleziona file di input...",command=dirinput)
 
 selezione4 = Button(text="Seleziona directory file di log...",command=dirlog)
 
+
+
 chiudi = Button(text="Applica",command=stop)
 
 selezione1.pack()
@@ -54,7 +61,7 @@ chiudi.pack()
 
 finestra.mainloop()
 
-linee = ['[cartelle]','\n','FILENAME1 = ',input,'\n','OUT = ', uscita,'/','csv.json','\n','LOG_FOLDER = ',log]
+linee = ['[cartelle]','\n','FILENAME1 = ',input,'\n','OUT = ', uscita,'/',nomefile,'.json','\n','LOG_FOLDER = ',log]
 try:
     with open (cfg, "w+")as f:
         for line in linee:
