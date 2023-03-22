@@ -30,8 +30,20 @@ def stop():
     global nomefile
     nomefile = simpledialog.askstring(title="Nome file di uscita",prompt="Inserire il nome del file di optput:")
     if(nomefile==""):
-        messagebox.showerror ("Attenzione", "nessun nome file applicato, verrà utilizzato 'default.json'")
-        nomefile='default'
+        messagebox.showerror ("Attenzione", "nessun nome file applicato")
+        nomefile = simpledialog.askstring(title="Nome file di uscita",prompt="Inserire il nome del file di optput:")
+    global uscita
+    if(uscita==""):
+        messagebox.showerror ("Attenzione", "nessuna cartella di uscita selezionata")
+        uscita= filedialog.askdirectory()
+    global input
+    if(input==""):
+        messagebox.showerror ("Attenzione", "nessun file CSV specificato")
+        input = filedialog.askopenfilename(filetypes=[("CSV files", ".csv .txt")])
+    global log
+    if(log==""):
+        messagebox.showerror ("Attenzione", "nessuna cartella di log selezionata")
+        log = filedialog.askdirectory()
     time.sleep(1)
     messagebox.showinfo("Info","Impostazioni Applicate")
     finestra.destroy()
@@ -51,7 +63,7 @@ def annulla():
 finestra = Tk()
 finestra.title("menù di selezione")
 finestra.geometry("200x170")
-finestra.configure(bg='green')
+finestra.configure(bg='gray')
 selezione1 = Button(text="Seleziona file di configurazione...",command=aprifile)
 
 selezione2 = Button(text="Seleziona directory di uscita...",command=diruscita)
@@ -79,7 +91,7 @@ try:
         for line in linee:
             f.write(line)
 except FileNotFoundError as err:
-    messagebox.showerror ("ATTENZIONE", "Nessun file di configurazione selezionato, il file rimarrà invariato")
+    messagebox.showerror ("ATTENZIONE", "Nessun file di configurazione selezionato o file inesistenti, il file rimarrà invariato")
 
 
 
