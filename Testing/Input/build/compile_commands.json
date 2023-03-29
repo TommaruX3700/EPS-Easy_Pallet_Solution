@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/casar/OneDrive/Desktop/Programmazione/Progetto EPS/Input/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/Input.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\Input.dir\\src\\main.cpp.obj -c \"C:\\Users\\casar\\OneDrive\\Desktop\\Programmazione\\Progetto EPS\\Input\\src\\main.cpp\"",
+  "file": "C:/Users/casar/OneDrive/Desktop/Programmazione/Progetto EPS/Input/src/main.cpp",
+  "output": "CMakeFiles/Input.dir/src/main.cpp.obj"
+}
+]

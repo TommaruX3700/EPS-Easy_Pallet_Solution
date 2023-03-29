@@ -1,0 +1,37 @@
+PACCHI PALLETTIZZABILI
+Collo n.18 -> x=195 y=67 h=41
+Collo n.26 -> x=195 y=67 h=41
+Collo n.25 -> x=188 y=48 h=35
+Collo n.17 -> x=187 y=48 h=35
+Collo n.31 -> x=159 y=70 h=7
+Collo n.30 -> x=153 y=48 h=35
+Collo n.21 -> x=81 y=53 h=67
+Collo n.13 -> x=81 y=53 h=67
+Collo n.29 -> x=81 y=53 h=67
+Collo n.28 -> x=81 y=53 h=67
+Collo n.10 -> x=73 y=23 h=23
+Collo n.9 -> x=73 y=23 h=23
+Collo n.3 -> x=72 y=61 h=44
+Collo n.1 -> x=72 y=61 h=44
+Collo n.7 -> x=68 y=31 h=5
+Collo n.23 -> x=56 y=53 h=67
+Collo n.22 -> x=53 y=10 h=67
+Collo n.24 -> x=56 y=53 h=67
+Collo n.15 -> x=56 y=53 h=67
+Collo n.14 -> x=53 y=10 h=67
+Collo n.16 -> x=56 y=53 h=67
+Collo n.20 -> x=53 y=10 h=67
+Collo n.12 -> x=53 y=10 h=67
+Collo n.4 -> x=60 y=40 h=54
+Collo n.2 -> x=60 y=40 h=54
+Collo n.19 -> x=56 y=44 h=32
+Collo n.27 -> x=56 y=44 h=32
+Collo n.8 -> x=48 y=45 h=8
+Collo n.34 -> x=30 y=30 h=35
+
+PACCHI NON PALLETTIZZABILI
+Collo n.5 -> x=0 y=0 h=0
+Collo n.6 -> x=0 y=0 h=0
+Collo n.11 -> x=0 y=0 h=0
+Collo n.32 -> x=90 y=58 h=74
+Collo n.33 -> x=98 y=73 h=146
