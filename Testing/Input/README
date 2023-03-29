@@ -1,0 +1,9 @@
+Questo programma legge in input il file out/spedizioni.json, e attraverso c++ (main.cpp) viene elaborato,
+suddividendo i pacchi pallettizzabili da quelli non pallettizzabili, ordinando i primi (ancora da capire
+chiaramente il metodo di ordinamento dei dati, che dipende dall'algoritmo)
+
+Eseguendo build/Input.exe (o il collegamento) verranno creati 3 file nella cartella out:
+
+1. out/pallettizzabili.json -> raccoglie i dati dei pacchi pallettizzabili ordinati 
+2. out/non_pallettizzabili.json -> raccoglie i dati dei pacchi non pallettizzabili
+3. out/output.txt -> mostra in output la lista completa divisa dei pacchi pallettizzabili e non
