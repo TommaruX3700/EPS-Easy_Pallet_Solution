@@ -1,0 +1,4 @@
+SinglePallet::SinglePallet()
+{
+
+}
