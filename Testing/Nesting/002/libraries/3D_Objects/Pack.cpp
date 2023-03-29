@@ -4,7 +4,7 @@ Declare here all the 3D objects used inside the project.
 
 #include ".\Geometry.h"
 
-class Pacco
+class Pack
 {
 private:
     struct centerCoords
@@ -28,19 +28,25 @@ public:
 
 };
 
-void Pacco::setCenterCoords(int x, int y, int z){ //sets center coords
+void Pack::setCenterCoords(int x, int y, int z){ //sets center coords
     centerCoords.x = x;
     centerCoords.y = y;
     centerCoords.z = z;
 
 }
 
-void Pacco::setDims(int x, int y, int z){ //set ddimensions divided by 2 (in order to refer at them by center)
+void Pack::setDims(int x, int y, int z){ //set ddimensions divided by 2 (in order to refer at them by center)
     dimsFromCentrer.x = x/2;
     dimsFromCentrer.y = y/2;
     dimsFromCentrer.z = z/2;
 
 }
 
+int* Pack::getDims(){
+    int temp[3];
+        temp[0] = x*2;
+        temp[1] = y*2;
+        temp[2] = z*2;
 
-
+    return temp;
+}
