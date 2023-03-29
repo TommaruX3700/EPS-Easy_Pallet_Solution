@@ -1,0 +1,4 @@
+PalletGroup::PalletGroup(/* args */)
+{
+    
+}
