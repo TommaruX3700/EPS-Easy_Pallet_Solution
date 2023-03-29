@@ -26,3 +26,7 @@ int* Pack::getDims(){
 
     return temp;
 }
+
+void Pack::changeOrientation(int a){
+
+}
