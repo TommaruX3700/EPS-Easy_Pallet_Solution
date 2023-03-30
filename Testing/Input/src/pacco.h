@@ -5,7 +5,7 @@
 
 
 
-class Pacco2D{
+class Pacco{
     public:
     int n_collo;
     double x, y, z;

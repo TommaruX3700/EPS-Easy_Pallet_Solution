@@ -32,10 +32,10 @@ int main(){
 
     int n=document.Size();
 
-    vector<Pacco2D> pacchi;
-    vector<Pacco2D> pacchiNP;
+    vector<Pacco> pacchi;
+    vector<Pacco> pacchiNP;
 
-    Pacco2D pacco;
+    Pacco pacco;
         
     ofstream output_file("../out/output.txt"); // crea un oggetto ofstream per scrivere su file
     output_file.rdbuf()->pubsetbuf(0, 0); // disabilita il buffer del file

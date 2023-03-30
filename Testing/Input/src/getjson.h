@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-void getJson(int i, Pacco2D pacco, rapidjson::Document& document, vector<Pacco2D>& pacchi, vector<Pacco2D>& pacchiNP, rapidjson::Document& pallettizzabili, rapidjson::Document& non_pallettizzabili){
+void getJson(int i, Pacco pacco, rapidjson::Document& document, vector<Pacco>& pacchi, vector<Pacco>& pacchiNP, rapidjson::Document& pallettizzabili, rapidjson::Document& non_pallettizzabili){
 
     if(document[i]["BASE_MAGGIORE"].GetType()==6){
         pacco.x = document[i]["BASE_MAGGIORE"].GetDouble();

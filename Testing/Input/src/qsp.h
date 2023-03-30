@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int partition(vector<Pacco2D>& pacchi, int low, int high) {
+int partition(vector<Pacco>& pacchi, int low, int high) {
     double pivot = max(pacchi[low].x, max(pacchi[low].y, pacchi[low].z));
     int i = low - 1, j = high + 1;
     while (true) {
@@ -24,7 +24,7 @@ int partition(vector<Pacco2D>& pacchi, int low, int high) {
     }
 }
 
-void quickSort(vector<Pacco2D>& pacchi, int low, int high) {
+void quickSort(vector<Pacco>& pacchi, int low, int high) {
     if (low < high) {
         int pivotIndex = partition(pacchi, low, high);
         quickSort(pacchi, low, pivotIndex);
@@ -32,8 +32,8 @@ void quickSort(vector<Pacco2D>& pacchi, int low, int high) {
     }
 }
 
-void swap(Pacco2D& a, Pacco2D& b){
-    Pacco2D c=a;
+void swap(Pacco& a, Pacco& b){
+    Pacco c=a;
     a=b;
     b=c;
 }
