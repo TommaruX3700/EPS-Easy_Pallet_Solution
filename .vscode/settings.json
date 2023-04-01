@@ -108,6 +108,6 @@
     "**/.vscode/**"
   ],
   "C_Cpp_Runner.useAddressSanitizer": false,
-  "cmake.sourceDirectory": "${workspaceFolder}/Progetto EPS/Input",
+  "cmake.sourceDirectory": "${workspaceFolder}/EPS-Project",
   "cmake.configureOnOpen": false
 }
