@@ -2,7 +2,8 @@
 Declare here all the 3D objects used inside the project.
 */
 
-#include ".\3D_Objects\Pack.h"
+#include ".\Pack.h"
+#include ".\Objects_includes.h"
 
 void Pack::setCenterCoords(int x, int y, int z){ //sets center coords
     centerCoords.x = x;

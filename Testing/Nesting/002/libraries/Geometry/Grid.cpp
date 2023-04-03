@@ -2,7 +2,8 @@
 Declare here all the Geometry entities in used by the project.
 */
 
-#include ".\3D_Objects.h"
+#include ".\Grid.h"
+#include ".\Geom_includes.h"
 
 Grid :: popolateGrid(int x, int y, int z){
     Griglia[][][];
