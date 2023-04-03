@@ -8,3 +8,4 @@ ext -> librerie importate
 out -> files di output
 input -> files di input
 CMakeFiles -> files di CMake
+a
