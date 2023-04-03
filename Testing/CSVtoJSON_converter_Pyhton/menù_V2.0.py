@@ -1,7 +1,7 @@
 from tkinter import *
 import tkinter as tk
 import time
-#import PySimpleGUI as sg
+import pathlib
 from tkinter import filedialog
 from tkinter import messagebox
 from tkinter import filedialog
@@ -12,6 +12,7 @@ uscita = ""
 cfg = ""
 nomefile = ""
 
+mainfolder=pathlib.Path(__file__).parent.resolve()
 
 def diruscita():
     global uscita
