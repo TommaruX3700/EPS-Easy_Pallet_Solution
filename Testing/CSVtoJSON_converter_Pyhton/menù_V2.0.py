@@ -71,7 +71,12 @@ finestra = Tk()
 finestra.title("menù di selezione")
 finestra.geometry("383x170")
 finestra.resizable(width=False, height=False)
-sfondo= tk.PhotoImage(file="C:\\Users\\amioli\\OneDrive - Sirmax Spa\\Documenti\\teamwk-scuola\\ITSM.png")
+try:
+    sfondo= tk.PhotoImage(file="C:\\Users\\aless\\Documents\\Easy-palle\\EPS-Easy_Pallet_Solution\\Testing\\CSVtoJSON_converter_Pyhton\\ITSMres.png")
+except TclError as err:
+    messagebox.showerror ("ATTENZIONE", "Non è stato possibile trovare il percorso contenente lo sfondo del menù")
+    finestra.destroy()
+
 immagine=Label(finestra, i=sfondo)
 selezione1 = Button(text="Seleziona file di configurazione...",command=aprifile)
 
