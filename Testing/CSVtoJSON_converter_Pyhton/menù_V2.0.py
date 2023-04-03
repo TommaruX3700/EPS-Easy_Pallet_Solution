@@ -73,7 +73,7 @@ finestra.title("menù di selezione")
 finestra.geometry("383x170")
 finestra.resizable(width=False, height=False)
 try:
-    sfondo= tk.PhotoImage(file="C:\\Users\\aless\\Documents\\Easy-palle\\EPS-Easy_Pallet_Solution\\Testing\\CSVtoJSON_converter_Pyhton\\ITSMres.png")
+    sfondo= tk.PhotoImage(file="{0}/ITSMres.png".format(mainfolder))
 except TclError as err:
     messagebox.showerror ("ATTENZIONE", "Non è stato possibile trovare il percorso contenente lo sfondo del menù")
     finestra.destroy()
@@ -109,3 +109,5 @@ try:
             f.write(line)
 except FileNotFoundError as err:
     messagebox.showerror ("ATTENZIONE", "Nessun file di configurazione selezionato o file inesistenti, il file rimarrà invariato")
+
+
