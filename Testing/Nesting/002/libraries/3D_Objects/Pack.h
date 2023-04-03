@@ -1,11 +1,11 @@
 class Pack
 {
     private:
-        typedef struct dimensions //defines type "dimensions"
+        typedef struct dimensions_t //defines type "dimensions"
         {
             float x, y, z; //divided by 2
         }; 
-        typedef struct centerCoords //defines type "centerCoords"
+        typedef struct centerCoords_t //defines type "centerCoords"
         {
             float cX, cY, cZ;
         };
@@ -13,8 +13,8 @@ class Pack
         float weight; //[kg]
         float density; //[Kg/m3]
 
-        dimensions dims;
-        centerCoords center;
+        dimensions_t dims;
+        centerCoords_t center;
 
     public:
         void set_Dims(float x, float y, float z);
@@ -22,7 +22,7 @@ class Pack
         void set_weight(float kg);
         void set_Orientation(int a); //change orientation by setting number here (0, 1 or 2), but multiplies x "1" or "-1"
 
-        dimensions* get_Dims(); //outs a pointer to an out stucture (with correct dimensions)
+        dimensions_t* get_Dims(); //outs a pointer to an out stucture (with correct dimensions)
 
         Pacco(float X, float Y, float Z, float CX, float CY, float CZ, float WGHT){ //constructor
             set_Dims(X, Y, Z);

@@ -26,8 +26,8 @@ void Pack::set_weight(float kg){
 
 }
 
-dimensions* Pack::get_Dims(){
-    dimensions out;
+dimensions_t* Pack::get_Dims(){
+    dimensions_t out;
     out.x = out.x*2;
     out.y = out.y*2;
     out.z = out.z*2;
