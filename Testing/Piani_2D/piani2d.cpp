@@ -8,7 +8,7 @@
 #include <cstring>
 #include <string>
 #include <cstdlib>
-#include <vector>
+#include <vector> 
 #include <windows.h>
 
 using namespace std;
