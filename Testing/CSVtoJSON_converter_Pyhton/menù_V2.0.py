@@ -78,13 +78,13 @@ except TclError as err:
     finestra.destroy()
 
 immagine=Label(finestra, i=sfondo)
-selezione1 = Button(text="Seleziona file di configurazione...",command=aprifile)
+selezione1 = Button(text="Seleziona file di configurazione...",height= 1, width=30,command=aprifile)
 
-selezione2 = Button(text="Seleziona directory di uscita...",command=diruscita)
+selezione2 = Button(text="Seleziona directory di uscita...",height= 1, width=30,command=diruscita)
 
-selezione3 = Button(text="Seleziona file di input...",command=dirinput)
+selezione3 = Button(text="Seleziona file di input...",height= 1, width=30,command=dirinput)
 
-selezione4 = Button(text="Seleziona directory file di log...",command=dirlog)
+selezione4 = Button(text="Seleziona directory file di log...",height= 1, width=30,command=dirlog)
 
 
 arresta = Button(text="Annulla",command=annulla)
@@ -93,7 +93,7 @@ chiudi = Button(text="Applica",command=stop)
 
 selezione1.place(x=100,y=70)
 selezione4.place(x=100,y=40)
-selezione3.place(x=100,y=10)
+selezione3.place(x=100,y=9)
 selezione2.place(x=100,y=100)
 arresta.place(x=320,y=140)
 chiudi.place(x=10,y=140)
