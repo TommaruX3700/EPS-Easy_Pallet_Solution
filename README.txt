@@ -7,3 +7,4 @@ Software developed to suit basic company logistical needs, such as:
  
  
 Il convertitore da CSV a json è stato spostato all'interno della cartella \Python_Scripts\CSVtoJSON_converter_Pyhton_STABLE
+Eseguibile del menù nella stessa cartella
