@@ -17,11 +17,11 @@
 #pragma region "Custom Made Libraries"
 
     #include ".\libraries\3D_Objects\headers\Pack.h"
-    #include ".\libraries\3D_Objects\headers\PalletGroup.h"
-    #include ".\libraries\3D_Objects\headers\SinglePallet.h"
+    //#include ".\libraries\3D_Objects\headers\PalletGroup.h"
+    //#include ".\libraries\3D_Objects\headers\SinglePallet.h"
     
-    #include ".\libraries\Geometry\headers\Grid.h"
-    #include ".\libraries\Geometry\headers\Point.h"
+    //#include ".\libraries\Geometry\headers\Grid.h"
+    //#include ".\libraries\Geometry\headers\Point.h"
 
     #include ".\libraries\Utility\src\inputmanager.cpp"
     #include ".\libraries\Utility\src\getjson.cpp"
@@ -36,6 +36,8 @@ int main(){
     vector<Pack> non_pallettizzabili;
 
     inputmanager(pallettizzabili, non_pallettizzabili);
+
+    cout<<pallettizzabili[0].get_Dims()->x<<" "<<pallettizzabili[0].get_Dims()->y<<" "<<pallettizzabili[0].get_Dims()->z<<endl;
 
     return 0;
 }

@@ -9,11 +9,11 @@
 #include <vector>
 #include <future>
 
-#include "../libraries/rapidjson/document.h"
-#include "../libraries/rapidjson/rapidjson.h"
-#include "../libraries/rapidjson/istreamwrapper.h"
-#include "../libraries/rapidjson/writer.h"
-#include "../libraries/rapidjson/ostreamwrapper.h"
+#include "../../external/rapidjson/document.h"
+#include "../../external/rapidjson/rapidjson.h"
+#include "../../external/rapidjson/istreamwrapper.h"
+#include "../../external/rapidjson/writer.h"
+#include "../../external/rapidjson/ostreamwrapper.h"
 
 
 #include "../../3D_Objects/headers/Pack.h"
@@ -24,7 +24,7 @@
 using namespace std;
 
 vector<Pack> inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
-    ifstream ifs("../../../input/spedizioni.json");
+    ifstream ifs("../../input/spedizioni.json");
     rapidjson::IStreamWrapper isw(ifs);
 
     rapidjson::Document document;
@@ -37,7 +37,7 @@ vector<Pack> inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
 
     Pack pacco;
         
-    ofstream output_file("../../../out/output.txt"); // crea un oggetto ofstream per scrivere su file
+    ofstream output_file("../../out/output.txt"); // crea un oggetto ofstream per scrivere su file
     output_file.rdbuf()->pubsetbuf(0, 0); // disabilita il buffer del file
 
     for (int i = 0; i < n; i++) {

@@ -35,7 +35,7 @@ void getJson(int i, Pack pacco, rapidjson::Document& document, vector<Pack>& pac
         peso = set_weight(stod(document[i]["PESO_LORDO"].GetString()));
     }
 
-    ncollo = (document[i]["NUMERO_COLLO"].GetInt());
+    n_collo = (document[i]["NUMERO_COLLO"].GetInt());
 
     if(document[i]["FLAG_RUOTABILE"].GetString()==""){
         ruotabile=true;
