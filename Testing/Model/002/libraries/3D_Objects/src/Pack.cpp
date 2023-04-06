@@ -2,6 +2,8 @@
 Declare here all the 3D objects used inside the project.
 */
 
+/*
+
 #include ".\Pack.h"
 #include ".\Objects_includes.h"
 #include "..\Geometry\Geom_includes.h"
@@ -54,3 +56,5 @@ void Pack::set_Orientation(int a){
     }
 
 }
+
+*/

@@ -1,8 +1,26 @@
 [
 {
   "directory": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/build",
-  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE   -g -std=gnu++11 -o CMakeFiles\\002.dir\\main.cpp.obj -c C:\\Users\\casar\\OneDrive\\Desktop\\EPS-Easy_Pallet_Solution\\Testing\\Model\\002\\main.cpp",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/002.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\002.dir\\main.cpp.obj -c C:\\Users\\casar\\OneDrive\\Desktop\\EPS-Easy_Pallet_Solution\\Testing\\Model\\002\\main.cpp",
   "file": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/main.cpp",
   "output": "CMakeFiles/002.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/002.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\002.dir\\libraries\\3D_Objects\\src\\Pack.cpp.obj -c C:\\Users\\casar\\OneDrive\\Desktop\\EPS-Easy_Pallet_Solution\\Testing\\Model\\002\\libraries\\3D_Objects\\src\\Pack.cpp",
+  "file": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/libraries/3D_Objects/src/Pack.cpp",
+  "output": "CMakeFiles/002.dir/libraries/3D_Objects/src/Pack.cpp.obj"
+},
+{
+  "directory": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/002.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\002.dir\\libraries\\3D_Objects\\src\\PalletGroup.cpp.obj -c C:\\Users\\casar\\OneDrive\\Desktop\\EPS-Easy_Pallet_Solution\\Testing\\Model\\002\\libraries\\3D_Objects\\src\\PalletGroup.cpp",
+  "file": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/libraries/3D_Objects/src/PalletGroup.cpp",
+  "output": "CMakeFiles/002.dir/libraries/3D_Objects/src/PalletGroup.cpp.obj"
+},
+{
+  "directory": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/002.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\002.dir\\libraries\\3D_Objects\\src\\SinglePallet.cpp.obj -c C:\\Users\\casar\\OneDrive\\Desktop\\EPS-Easy_Pallet_Solution\\Testing\\Model\\002\\libraries\\3D_Objects\\src\\SinglePallet.cpp",
+  "file": "C:/Users/casar/OneDrive/Desktop/EPS-Easy_Pallet_Solution/Testing/Model/002/libraries/3D_Objects/src/SinglePallet.cpp",
+  "output": "CMakeFiles/002.dir/libraries/3D_Objects/src/SinglePallet.cpp.obj"
 }
 ]

@@ -128,6 +128,78 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/build
 .PHONY : 002/fast
 
+libraries/3D_Objects/src/Pack.obj: libraries/3D_Objects/src/Pack.cpp.obj
+.PHONY : libraries/3D_Objects/src/Pack.obj
+
+# target to build an object file
+libraries/3D_Objects/src/Pack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/Pack.cpp.obj
+.PHONY : libraries/3D_Objects/src/Pack.cpp.obj
+
+libraries/3D_Objects/src/Pack.i: libraries/3D_Objects/src/Pack.cpp.i
+.PHONY : libraries/3D_Objects/src/Pack.i
+
+# target to preprocess a source file
+libraries/3D_Objects/src/Pack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/Pack.cpp.i
+.PHONY : libraries/3D_Objects/src/Pack.cpp.i
+
+libraries/3D_Objects/src/Pack.s: libraries/3D_Objects/src/Pack.cpp.s
+.PHONY : libraries/3D_Objects/src/Pack.s
+
+# target to generate assembly for a file
+libraries/3D_Objects/src/Pack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/Pack.cpp.s
+.PHONY : libraries/3D_Objects/src/Pack.cpp.s
+
+libraries/3D_Objects/src/PalletGroup.obj: libraries/3D_Objects/src/PalletGroup.cpp.obj
+.PHONY : libraries/3D_Objects/src/PalletGroup.obj
+
+# target to build an object file
+libraries/3D_Objects/src/PalletGroup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/PalletGroup.cpp.obj
+.PHONY : libraries/3D_Objects/src/PalletGroup.cpp.obj
+
+libraries/3D_Objects/src/PalletGroup.i: libraries/3D_Objects/src/PalletGroup.cpp.i
+.PHONY : libraries/3D_Objects/src/PalletGroup.i
+
+# target to preprocess a source file
+libraries/3D_Objects/src/PalletGroup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/PalletGroup.cpp.i
+.PHONY : libraries/3D_Objects/src/PalletGroup.cpp.i
+
+libraries/3D_Objects/src/PalletGroup.s: libraries/3D_Objects/src/PalletGroup.cpp.s
+.PHONY : libraries/3D_Objects/src/PalletGroup.s
+
+# target to generate assembly for a file
+libraries/3D_Objects/src/PalletGroup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/PalletGroup.cpp.s
+.PHONY : libraries/3D_Objects/src/PalletGroup.cpp.s
+
+libraries/3D_Objects/src/SinglePallet.obj: libraries/3D_Objects/src/SinglePallet.cpp.obj
+.PHONY : libraries/3D_Objects/src/SinglePallet.obj
+
+# target to build an object file
+libraries/3D_Objects/src/SinglePallet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/SinglePallet.cpp.obj
+.PHONY : libraries/3D_Objects/src/SinglePallet.cpp.obj
+
+libraries/3D_Objects/src/SinglePallet.i: libraries/3D_Objects/src/SinglePallet.cpp.i
+.PHONY : libraries/3D_Objects/src/SinglePallet.i
+
+# target to preprocess a source file
+libraries/3D_Objects/src/SinglePallet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/SinglePallet.cpp.i
+.PHONY : libraries/3D_Objects/src/SinglePallet.cpp.i
+
+libraries/3D_Objects/src/SinglePallet.s: libraries/3D_Objects/src/SinglePallet.cpp.s
+.PHONY : libraries/3D_Objects/src/SinglePallet.s
+
+# target to generate assembly for a file
+libraries/3D_Objects/src/SinglePallet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\002.dir\build.make CMakeFiles/002.dir/libraries/3D_Objects/src/SinglePallet.cpp.s
+.PHONY : libraries/3D_Objects/src/SinglePallet.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 002
+	@echo ... libraries/3D_Objects/src/Pack.obj
+	@echo ... libraries/3D_Objects/src/Pack.i
+	@echo ... libraries/3D_Objects/src/Pack.s
+	@echo ... libraries/3D_Objects/src/PalletGroup.obj
+	@echo ... libraries/3D_Objects/src/PalletGroup.i
+	@echo ... libraries/3D_Objects/src/PalletGroup.s
+	@echo ... libraries/3D_Objects/src/SinglePallet.obj
+	@echo ... libraries/3D_Objects/src/SinglePallet.i
+	@echo ... libraries/3D_Objects/src/SinglePallet.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
