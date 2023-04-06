@@ -2,6 +2,8 @@
 #include "../../3D_Objects/headers/Pack.h"
 #include "../../external/rapidjson/document.h"
 #include "../../external/rapidjson/rapidjson.h"
+
+
 using namespace std;
 
 
@@ -32,7 +34,7 @@ void getJson(int i, Pack pacco, rapidjson::Document& document, vector<Pack>& pac
     if(document[i]["PESO_LORDO"].GetType()==6){
         peso = document[i]["PESO_LORDO"].GetDouble();
     } else {
-        peso = set_weight(stod(document[i]["PESO_LORDO"].GetString()));
+        peso = stod(document[i]["PESO_LORDO"].GetString());
     }
 
     n_collo = (document[i]["NUMERO_COLLO"].GetInt());
@@ -43,7 +45,7 @@ void getJson(int i, Pack pacco, rapidjson::Document& document, vector<Pack>& pac
         ruotabile=false;
     }
 
-    Pack pacco=Pack(x, y, z, peso, n_collo, ruotabile);
+    pacco=Pack(x, y, z, peso, n_collo, ruotabile);
 
     if(document[i]["FLAG_PALLETTIZZABILE"].GetString()==""){
         pacchi.push_back(pacco);

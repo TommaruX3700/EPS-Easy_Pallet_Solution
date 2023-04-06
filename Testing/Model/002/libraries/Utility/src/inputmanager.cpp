@@ -23,17 +23,25 @@
 
 using namespace std;
 
-vector<Pack> inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
-    ifstream ifs("../../input/spedizioni.json");
+void inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
+    ifstream ifs("../../../input/spedizioni.json");
     rapidjson::IStreamWrapper isw(ifs);
 
     rapidjson::Document document;
     document.ParseStream(isw);
 
-    int n=document.Size();
+    if (document.HasParseError()) {
+        cout << "Errore nel parsing del file JSON." << endl;
+        return;
+    }
 
-    vector<Pack> pacchi;
-    vector<Pack> pacchiNP;
+    // Verifica se il documento contiene un array
+    if (!document.IsArray()) {
+        cout << "Il file JSON non contiene un array." << endl;
+        return;
+    }
+
+    int n=document.Size();
 
     Pack pacco;
         
@@ -48,12 +56,11 @@ vector<Pack> inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
 
     output_file << "PACCHI PALLETTIZZABILI" << endl;
     for (int i = 0; i < pacchi.size(); i++) {
-        if(pacchi[i].pallettizzabile==""){
-            output_file << "Collo n." << pacchi[i].n_collo << " -> x=" << pacchi[i].x << " y=" << pacchi[i].y << " h=" << pacchi[i].z << endl;
-        }
+         output_file << "Collo n." << pacchi[i].get_PackID() << " -> x=" << pacchi[i].get_Dims()->x << " y=" << pacchi[i].get_Dims()->y << " h=" << pacchi[i].get_Dims()->z << endl;
     }
+
     output_file << endl << "PACCHI NON PALLETTIZZABILI" << endl;
     for (int i = 0; i < pacchiNP.size(); i++) {
-        output_file << "Collo n." << pacchiNP[i].n_collo << " -> x=" << pacchiNP[i].x << " y=" << pacchiNP[i].y << " h=" << pacchiNP[i].z << endl;
+        output_file << "Collo n." << pacchiNP[i].get_PackID() << " -> x=" << pacchiNP[i].get_Dims()->x << " y=" << pacchiNP[i].get_Dims()->y << " h=" << pacchiNP[i].get_Dims()->z << endl;
     }
 }

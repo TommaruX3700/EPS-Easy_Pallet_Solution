@@ -4,16 +4,16 @@
 
 using namespace std;
 
-int partition(vector<Pacco>& pacchi, int low, int high) {
-    double pivot = max(pacchi[low].x, max(pacchi[low].y, pacchi[low].z));
+int partition(vector<Pack>& pacchi, int low, int high) {
+    double pivot = max(pacchi[low].get_Dims()->x, max(pacchi[low].get_Dims()->y, pacchi[low].get_Dims()->z));
     int i = low - 1, j = high + 1;
     while (true) {
         do {
             i++;
-        } while (max(pacchi[i].x, max(pacchi[i].y, pacchi[i].z)) > pivot);
+        } while (max(pacchi[i].get_Dims()->x, max(pacchi[i].get_Dims()->y, pacchi[i].get_Dims()->z)) > pivot);
         do {
             j--;
-        } while (max(pacchi[j].x, max(pacchi[j].y, pacchi[j].z)) < pivot);
+        } while (max(pacchi[j].get_Dims()->x, max(pacchi[j].get_Dims()->y, pacchi[j].get_Dims()->z)) < pivot);
         if (i >= j) {
             return j;
         }
@@ -21,7 +21,7 @@ int partition(vector<Pacco>& pacchi, int low, int high) {
     }
 }
 
-void quickSort(vector<Pacco>& pacchi, int low, int high) {
+void quickSort(vector<Pack>& pacchi, int low, int high) {
     if (low < high) {
         int pivotIndex = partition(pacchi, low, high);
         quickSort(pacchi, low, pivotIndex);
@@ -29,8 +29,8 @@ void quickSort(vector<Pacco>& pacchi, int low, int high) {
     }
 }
 
-void swap(Pacco& a, Pacco& b){
-    Pacco c=a;
+void swap(Pack& a, Pack& b){
+    Pack c=a;
     a=b;
     b=c;
 }

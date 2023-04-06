@@ -24,7 +24,6 @@
     //#include ".\libraries\Geometry\headers\Point.h"
 
     #include ".\libraries\Utility\src\inputmanager.cpp"
-    #include ".\libraries\Utility\src\getjson.cpp"
 
 #pragma endregion
 

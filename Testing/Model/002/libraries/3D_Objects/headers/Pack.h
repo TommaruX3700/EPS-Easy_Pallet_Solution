@@ -1,12 +1,15 @@
+#ifndef PACK_H
+#define PACK_H
+
 class Pack
 {
     private:
 
-        typedef struct dimensions_t //defines type "dimensions"
+        struct dimensions_t //defines type "dimensions"
         {
             float x, y, z;
         }; 
-        typedef struct centerCoords_t //defines type "centerCoords"
+        struct centerCoords_t //defines type "centerCoords"
         {
             float cX, cY, cZ;
         };
@@ -22,6 +25,8 @@ class Pack
         bool palletizable;
 
     public:
+
+        Pack(){}
 
         Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile){ //constructor
             set_Dims(X, Y, Z);
@@ -54,5 +59,12 @@ class Pack
 
         dimensions_t* get_Dims(){
             return &this->dims;     //outs a pointer to an out stucture (with correct dimensions)
+        }
+
+        int get_PackID(){
+            return this->packID;
         }                           
 };
+
+
+#endif // PACK_H
