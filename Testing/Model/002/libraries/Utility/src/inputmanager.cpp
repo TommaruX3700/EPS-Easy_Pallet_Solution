@@ -11,6 +11,7 @@
 
 #include "../../external/rapidjson/document.h"
 #include "../../external/rapidjson/rapidjson.h"
+#include "../../external/rapidjson/reader.h"
 #include "../../external/rapidjson/istreamwrapper.h"
 #include "../../external/rapidjson/writer.h"
 #include "../../external/rapidjson/ostreamwrapper.h"
@@ -24,14 +25,20 @@
 using namespace std;
 
 void inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
-    ifstream ifs("../../../input/spedizioni.json");
+    ifstream ifs("input/spedizioni.json");
     rapidjson::IStreamWrapper isw(ifs);
 
     rapidjson::Document document;
     document.ParseStream(isw);
 
+    if (!ifs.is_open()) {
+        std::cout << "Impossibile aprire il file spedizioni.json" << std::endl;
+        return;
+    }
+
     if (document.HasParseError()) {
         cout << "Errore nel parsing del file JSON." << endl;
+        cout << "Errore: " << document.GetParseError() << ", Offset: " << document.GetErrorOffset() << endl;
         return;
     }
 
@@ -41,16 +48,20 @@ void inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
         return;
     }
 
+    cout<<"TEST JSON ACQUISITO"<<endl;
+
     int n=document.Size();
 
     Pack pacco;
         
-    ofstream output_file("../../out/output.txt"); // crea un oggetto ofstream per scrivere su file
+    ofstream output_file("out/output.txt"); // crea un oggetto ofstream per scrivere su file
     output_file.rdbuf()->pubsetbuf(0, 0); // disabilita il buffer del file
 
     for (int i = 0; i < n; i++) {
         getJson(i, pacco, document, pacchi, pacchiNP);
     }
+
+    cout<<"TEST IMPORTAZIONE DA JSON ESEGUITO"<<endl;
 
     quickSort(pacchi, 0, pacchi.size() - 1);
 
@@ -63,4 +74,6 @@ void inputmanager(vector<Pack>& pacchi, vector<Pack>& pacchiNP){
     for (int i = 0; i < pacchiNP.size(); i++) {
         output_file << "Collo n." << pacchiNP[i].get_PackID() << " -> x=" << pacchiNP[i].get_Dims()->x << " y=" << pacchiNP[i].get_Dims()->y << " h=" << pacchiNP[i].get_Dims()->z << endl;
     }
+
+    cout<<"TEST OUTPUT.TXT"<<endl;
 }

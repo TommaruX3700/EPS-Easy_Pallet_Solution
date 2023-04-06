@@ -34,8 +34,14 @@ int main(){
     vector<Pack> pallettizzabili;
     vector<Pack> non_pallettizzabili;
 
+    cout<<"TEST INIZIALE"<<endl;
+
     inputmanager(pallettizzabili, non_pallettizzabili);
 
+    cout<<"TEST FINALE"<<endl;
+
+    cout<<pallettizzabili.size()<<endl;
+    
     cout<<pallettizzabili[0].get_Dims()->x<<" "<<pallettizzabili[0].get_Dims()->y<<" "<<pallettizzabili[0].get_Dims()->z<<endl;
 
     return 0;

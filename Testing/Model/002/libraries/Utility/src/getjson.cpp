@@ -47,7 +47,7 @@ void getJson(int i, Pack pacco, rapidjson::Document& document, vector<Pack>& pac
 
     pacco=Pack(x, y, z, peso, n_collo, ruotabile);
 
-    if(document[i]["FLAG_PALLETTIZZABILE"].GetString()==""){
+    if(document[i]["FLAG_PALETTIZZABILE"]!="N"){
         pacchi.push_back(pacco);
     } else {
         pacchiNP.push_back(pacco);
