@@ -38,6 +38,6 @@ class YZplane : public 2DPlane
         Cell** cell;
         
     public:
-        XZplane(int dim1, int dim2);
-        ~XZplane();
+        YZplane(int dim1, int dim2);
+        ~YZplane();
 };

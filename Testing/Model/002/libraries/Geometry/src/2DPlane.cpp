@@ -1,9 +1,7 @@
-#include "..\headers\Geom_includes.h"
 #include "..\headers\2DPlane.h"
 #include "..\headers\Cell.h"
 
-
-2DPlane :: set_occupiedCells(float c1, float c2, float dim1, float dim2){
+virtual void 2DPlane :: set_occupiedCells(float c1, float c2, float dim1, float dim2){
     for(float i=(-dim1)/2; i<=dim1/2; i+=1){
             for(float j=(-dim2)/2; j<=dim2/2; j+=1){
                 cell[int(c1+i)][int(c2+j)].isFree=false;
