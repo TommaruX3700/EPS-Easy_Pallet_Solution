@@ -3,12 +3,12 @@
 Pallet :: Pallet(float x, float y, float z)
 {   
     set_Dims(x, y, z);
-    pallet.clear();
+    this->pallet.clear();
 }
 
 Pallet :: ~Pallet()
 {
-    pallet.clear();
+    this->pallet.clear();
 }
 
 void Pallet :: set_Dims(float x, float y, float z)
@@ -29,15 +29,15 @@ palletDims_t Pallet :: get_Dims()
 
 void Pallet :: add_Pack(Pack* a, int index = NULL)
 {
-    (index == NULL) ? (pallet.push_back(a)) : (pallet.insert(index, a))
+    (index == NULL) ? (this->pallet.push_back(a)) : (this->pallet.insert(index, a))
 }
 
-void Pallet :: remove_Pack(int index = pallet.size())
+void Pallet :: remove_Pack(int index = this->pallet.size())
 {
-    pallet.erase(index);
+    this->pallet.erase(index);
 }
 
 int Pallet :: pack_Count()
 {
-    return pallet.size();
+    return this->pallet.size();
 }

@@ -24,9 +24,9 @@ void Pack :: set_dims(float x, float y, float z){
 }
 
 void Pack :: set_centerCoords(float x, float y, float z){ 
-    center.cX = x;
-    center.cY = y;
-    center.cZ = z;
+    this->center.cX = x;
+    this->center.cY = y;
+    this->center.cZ = z;
 }
 
 void Pack :: set_weight(float kg){

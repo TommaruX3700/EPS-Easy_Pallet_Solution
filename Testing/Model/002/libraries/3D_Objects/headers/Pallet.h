@@ -1,6 +1,10 @@
+#pragma once
+#ifndef PALLET_H
+#define PALLET_H
+
 #include <iostream>
 #include <vector>
-#include "..\headers\Pack.h"
+#include ".\Pack.h"
 
 class Pallet
 {
@@ -9,7 +13,6 @@ class Pallet
         {
             float Xmax, Ymax, Zmax;     //Note: those are the max dimensions of the Pallet
         };
-        
         
         std :: vector<Pack> pallet;    
         palletDims_t dims;
@@ -30,3 +33,4 @@ class Pallet
         int pack_Count();
 };
 
+#endif
