@@ -4,7 +4,7 @@ Headers e Definizioni:
 Geometry -> geometriche
 Utility -> operazioni comuni
 
-ext -> librerie importate
-out -> files di output
+external -> librerie importate
+output -> files di output
 input -> files di input
 CMakeFiles -> files di CMake
