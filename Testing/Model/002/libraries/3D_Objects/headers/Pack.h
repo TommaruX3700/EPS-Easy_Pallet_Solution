@@ -1,4 +1,4 @@
-#ifndef PACK_H
+#ifndef PACK_H //header guards, prevents C++ header files from beign included multiple times
 #define PACK_H
 
 class Pack
@@ -14,8 +14,8 @@ class Pack
             float cX, cY, cZ;
         };
 
-        float weight; //[kg]
-        float density; //[Kg/m3]
+        float weight; //Unit: [kg]
+        float density; //Unit: [kg/m^3]
 
         dimensions_t dims;
         centerCoords_t center;
@@ -26,45 +26,23 @@ class Pack
 
     public:
 
-        Pack(){}
+//CONSTRUCTORS
+        Pack(){}                                                                        //generic constructor
+        Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile) {}     //specific constructor
 
-        Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile){ //constructor
-            set_Dims(X, Y, Z);
-            set_weight(WGHT);
-            set_PackID(n_collo);
-            is_Rotatable(ruotabile);
-        }
+//SET-METHODS
+        void set_dims(float x, float y, float z) {}
+        void set_centerCoords(float x, float y, float z); //check implementation
+        void set_weight(float kg) {}
+        void set_orientation(int a); //TOM: end implementation
+        void set_isRotatable(bool is_rotatable) {}
+        void set_packID(int n_collo) {}
+        dimensions_t* get_Dims() {} //outs a pointer to an out stucture (with correct dimensions)
 
-        void set_Dims(float x, float y, float z){
-            this->dims.x = x;
-            this->dims.y = y;
-            this->dims.z = z;
-        }
+//GET-METHODS
+        int get_PackID() {}
 
-        void set_CenterCoords(float x, float y, float z);
-
-        void set_weight(float kg){
-            this->weight = kg;
-        }
-
-        void set_Orientation(int a); //change orientation by setting number here (0, 1 or 2), but multiplies x "1" or "-1"
-
-        void is_Rotatable(bool is_rotatable){
-            this->rotatable = is_rotatable;
-        }
-
-        void set_PackID(int n_collo){
-            this->packID = n_collo;
-        }
-
-        dimensions_t* get_Dims(){
-            return &this->dims;     //outs a pointer to an out stucture (with correct dimensions)
-        }
-
-        int get_PackID(){
-            return this->packID;
-        }                           
 };
 
 
-#endif // PACK_H
+#endif
