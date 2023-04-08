@@ -24,6 +24,8 @@ class Pack
         int packID;
         bool rotatable;
         bool palletizable;
+        
+        int packPalletIndex;    //TODO: this contains the Index of where it is inside a Vector (evaluate if usefull or not)
 
     public:
 

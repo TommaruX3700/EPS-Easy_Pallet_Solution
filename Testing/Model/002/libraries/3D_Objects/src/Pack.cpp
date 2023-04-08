@@ -3,7 +3,6 @@ Declare here all the 3D objects used inside the project.
 */
 
 #include ".\Pack.h"
-#include ".\Objects_includes.h"
 
 Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile){
     set_Dims(X, Y, Z);
