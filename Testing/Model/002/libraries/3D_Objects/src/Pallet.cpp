@@ -10,6 +10,17 @@ Pallet :: ~Pallet()
     pallet.clear();
 }
 
+void Pallet :: set_Dims()
+{
+
+}
+
+palletDims_t Pallet :: get_Dims(){
+    palletDims_t out;
+    out.Xmax = 
+
+}
+
 void Pallet :: add_Pack(Pack* a, int index = NULL)
 {
     (index == NULL) ? (pallet.push_back(a)) : (pallet.insert(index, a))
