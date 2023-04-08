@@ -3,6 +3,6 @@ class SinglePallet
 private:
     
 public:
-    SinglePallet()
+    //SinglePallet()
 };
 
