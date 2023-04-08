@@ -12,10 +12,16 @@ Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile)
     is_Rotatable(ruotabile);
 }
 
+Pack :: ~Pack(){
+    //TODO: implement this one
+}
+
 void Pack :: set_dims(float x, float y, float z){
     this->dims.x = x;
     this->dims.y = y;
     this->dims.z = z;
+
+    this->old_dims = this->dims;
 }
 
 void Pack :: set_centerCoords(float x, float y, float z){ 
@@ -31,17 +37,41 @@ void Pack :: set_weight(float kg){
 
 void Pack::set_orientation(int a){
     switch (a)
-    {
+    {   
         case 0:
-            dims.x
+            this->dims.x = this->old_dims.x
+            this->dims.y = this->old_dims.y
+            this->dims.z = this->old_dims.z
             break;
-        
-        case 1:
 
+        case 1:
+            this->dims.x = this->old_dims.z
+            this->dims.y = this->old_dims.y
+            this->dims.z = this->old_dims.x
             break;
-        
+
         case 2:
-        
+            this->dims.x = this->old_dims.x
+            this->dims.y = this->old_dims.z
+            this->dims.z = this->old_dims.y
+            break;
+
+        case 3:
+            this->dims.x = this->old_dims.y
+            this->dims.y = this->old_dims.x
+            this->dims.z = this->old_dims.z
+            break;
+
+        case 4:
+            this->dims.x = this->old_dims.y
+            this->dims.y = this->old_dims.z
+            this->dims.z = this->old_dims.x
+            break;
+
+        case 5:
+            this->dims.x = this->old_dims.z
+            this->dims.y = this->old_dims.x
+            this->dims.z = this->old_dims.y
             break;
 
         default:
