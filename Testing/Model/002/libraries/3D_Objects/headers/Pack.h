@@ -1,15 +1,15 @@
-#ifndef PACK_H //header guards, prevents C++ header files from beign included multiple times
+#ifndef PACK_H //"header guards", prevents C++ header files from beign included multiple times
 #define PACK_H
 
 class Pack
 {
     private:
 
-        struct dimensions_t //defines type "dimensions"
+        struct dimensions_t //custom type "dimensions"
         {
             float x, y, z;
         }; 
-        struct centerCoords_t //defines type "centerCoords"
+        struct centerCoords_t //custom type "centerCoords"
         {
             float cX, cY, cZ;
         };

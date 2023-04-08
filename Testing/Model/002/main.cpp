@@ -19,9 +19,7 @@
     #include ".\libraries\3D_Objects\headers\Pack.h"
     //#include ".\libraries\3D_Objects\headers\PalletGroup.h"
     //#include ".\libraries\3D_Objects\headers\SinglePallet.h"
-    
-    //#include ".\libraries\Geometry\headers\Grid.h"
-    //#include ".\libraries\Geometry\headers\Point.h"
+    //#include ".\libraries\Geometry\headers\2DPlane.h"
 
     #include ".\libraries\Utility\src\inputmanager.cpp"
 

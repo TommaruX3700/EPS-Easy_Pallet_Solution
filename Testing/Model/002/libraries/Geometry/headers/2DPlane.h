@@ -1,9 +1,5 @@
-#include ".\Geom_includes.h"
-
 class 2DPlane
 {
-    private:
-        
     public:
         virtual void set_occupiedCells(float c1, float c2, float dim1, float dim2) = 0;
         //virtual bool isFree(float c1, float c2, float dim1, float dim2) = 0;
