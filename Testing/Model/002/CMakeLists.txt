@@ -10,11 +10,13 @@ set(CMAKE_CXX_STANDARD 11)
 # Add main.cpp as an executable target
 add_executable(${PROJECT_NAME} main.cpp)
 
-# Include headers from libraries/3D_Objects/headers directory
+# Include headers from 3D_Objects & Geometry /headers directories
 include_directories(libraries/3D_Objects/headers)
+include_directories(libraries/Geometry/headers)
 
-# Add source files from libraries/3D_Objects/src directory
+# Add source files from 3D_Objects & Geometry /src directories
 file(GLOB SOURCES libraries/3D_Objects/src/*.cpp)
+file(GLOB SOURCES libraries/Geometry/src/*.cpp)
 
 # Add source files to the executable target
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
