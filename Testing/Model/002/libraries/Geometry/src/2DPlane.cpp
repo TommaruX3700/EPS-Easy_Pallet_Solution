@@ -37,7 +37,7 @@ XYplane :: ~XYplane()
 }
 
 
-ZXplane :: ZXplane(int dim1, int dim2)
+XZplane :: XZplane(int dim1, int dim2)
 {
     max_X = dim1;
     max_Y = dim2;
@@ -50,7 +50,7 @@ ZXplane :: ZXplane(int dim1, int dim2)
         }
 }
 
-ZXplane :: ~ZXplane()
+XZplane :: ~XZplane()
 {
     for(int i = 0; i < max_X; i++){
             delete[] cell[i];
