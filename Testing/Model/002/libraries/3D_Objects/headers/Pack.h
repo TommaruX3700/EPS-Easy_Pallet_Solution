@@ -41,6 +41,7 @@ class Pack
         void set_orientation(int a);                    //a = orientation (0~5, with 0 as standard orientation)
         void set_isRotatable(bool is_rotatable);
         void set_packID(int n_collo);
+        
         dimensions_t* get_Dims();                       //outs a pointer to an out stucture (with correct dimensions)
 
 //GET-METHODS
