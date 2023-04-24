@@ -14,6 +14,7 @@ Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile)
 
 Pack :: ~Pack(){
     //TODO: implement this one
+    
 }
 
 void Pack :: set_dims(float x, float y, float z)
@@ -85,10 +86,12 @@ void Pack::set_orientation(int a){
 
 void Pack :: set_isRotatable(bool is_rotatable){
     this->rotatable = is_rotatable;
+
 }
 
 void Pack :: set_packID(int n_collo){
     this->packID = n_collo;
+
 }
 
 Pack :: dimensions_t* Pack :: get_Dims(){
@@ -97,4 +100,5 @@ Pack :: dimensions_t* Pack :: get_Dims(){
 
 int Pack :: get_PackID(){
     return this->packID;
+
 }
