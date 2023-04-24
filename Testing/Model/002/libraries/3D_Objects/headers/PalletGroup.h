@@ -9,7 +9,7 @@
 class PalletGroup
 {
     private:
-        std :: vector<Pallet> palletGroup;
+        std :: vector<Pallet *> palletGroup; //vector or a pointers to pallet groups
         int max = 0; //Note: "max" indicates the max number of possible pallets. If exceded another PalletGroup should be created. 0 means no limit.
     
     public:
