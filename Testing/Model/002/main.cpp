@@ -12,8 +12,8 @@
 
 #pragma region "Custom Made Libraries"
     #include ".\libraries\3D_Objects\headers\Pack.h"
-    //#include ".\libraries\3D_Objects\headers\PalletGroup.h"
-    //#include ".\libraries\3D_Objects\headers\SinglePallet.h"
+    #include ".\libraries\3D_Objects\headers\PalletGroup.h"
+    #include ".\libraries\3D_Objects\headers\Pallet.h"
     #include ".\libraries\Geometry\headers\2DPlane.h"
 
 #pragma endregion
