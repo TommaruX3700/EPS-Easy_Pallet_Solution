@@ -9,6 +9,7 @@ class Pack
         {
             float x, y, z;
         }; 
+        
         struct centerCoords_t   //custom type "centerCoords"
         {
             float cX, cY, cZ;
