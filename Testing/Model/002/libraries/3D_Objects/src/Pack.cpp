@@ -6,10 +6,10 @@ Declare here all the 3D objects used inside the project.
 
 Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile)
 {
-    set_Dims(X, Y, Z);
+    set_dims(X, Y, Z);
     set_weight(WGHT);
-    set_PackID(n_collo);
-    is_Rotatable(ruotabile);
+    set_packID(n_collo);
+    set_isRotatable(ruotabile);
 }
 
 Pack :: ~Pack(){
