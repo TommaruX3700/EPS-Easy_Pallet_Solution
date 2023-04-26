@@ -9,7 +9,7 @@ class Pack
         {
             float x, y, z;
         }; 
-        
+
         struct centerCoords_t   //custom type "centerCoords"
         {
             float cX, cY, cZ;
@@ -19,7 +19,7 @@ class Pack
         float density;  //Unit: [kg/m^3]
 
         dimensions_t dims;      //Note: those are the current dimensions effected by current orientation
-        dimensions_t old_dims;  //Note: this old structure is use to preserve the original orientation of the pack
+        dimensions_t old_dims;  //Note: this old structure is    use to preserve the original orientation of the pack
         centerCoords_t center;
 
         int packID;
