@@ -25,12 +25,11 @@
 
 using namespace std;
 
-int main(){
-
 XYplane XY(150, 150);
 XZplane XZ(150, 150);
 YZplane YZ(150, 150);
 
+int main(){
 
 //-----Fede:Test_XX/04/2023-------------------------------------------------------------------
     // vector<Pack> pallettizzabili;
