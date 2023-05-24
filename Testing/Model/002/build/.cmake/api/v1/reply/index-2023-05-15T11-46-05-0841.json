@@ -4,7 +4,7 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
@@ -18,15 +18,15 @@
 			"isDirty" : false,
 			"major" : 3,
 			"minor" : 26,
-			"patch" : 0,
-			"string" : "3.26.0-rc6",
-			"suffix" : "rc6"
+			"patch" : 3,
+			"string" : "3.26.3",
+			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-3db2aaabf3e09a956d05.json",
+			"jsonFile" : "codemodel-v2-2f7e41032bed2377976a.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-47bb8aa3b5064d48345f.json",
+			"jsonFile" : "cache-v2-bed4820dcea43b19fd8c.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-65eb391c9114d8451147.json",
+			"jsonFile" : "cmakeFiles-v1-53e3222a2456188ba1f1.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-ec2b520660c1da5095f9.json",
+			"jsonFile" : "toolchains-v1-754e0fc8575f63e75ef2.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-47bb8aa3b5064d48345f.json",
+						"jsonFile" : "cache-v2-bed4820dcea43b19fd8c.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +99,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-3db2aaabf3e09a956d05.json",
+						"jsonFile" : "codemodel-v2-2f7e41032bed2377976a.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -108,7 +108,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-ec2b520660c1da5095f9.json",
+						"jsonFile" : "toolchains-v1-754e0fc8575f63e75ef2.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-65eb391c9114d8451147.json",
+						"jsonFile" : "cmakeFiles-v1-53e3222a2456188ba1f1.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
