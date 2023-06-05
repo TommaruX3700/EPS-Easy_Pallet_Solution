@@ -1,3 +1,7 @@
+//Document: Cell.h
+//
+//Description: Single cell class declaration
+
 #include "..\3D_Objects\Pack.h"
 
 class Cell //punto della griglia

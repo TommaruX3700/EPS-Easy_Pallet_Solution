@@ -1,3 +1,7 @@
+//Document: PalletGroup.h
+//
+//Description: Pallet group class declaration
+
 #pragma once
 #ifndef PALLETGROUP_H
 #define PALLETGROUP_H

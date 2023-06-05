@@ -1,6 +1,6 @@
-/*
-Declare here all the 3D objects used inside the project.
-*/
+//Document: Pack.cpp
+//
+//Description: Pack class definition
 
 #include "..\..\headers\3D_Objects\Pack.h"
 

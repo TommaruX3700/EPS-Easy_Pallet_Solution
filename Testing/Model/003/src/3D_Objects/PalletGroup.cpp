@@ -1,3 +1,7 @@
+//Document: PalletGroup.cpp
+//
+//Description: Pallet group class definition
+
 #include "..\..\headers\3D_Objects\PalletGroup.h"
 
 PalletGroup::PalletGroup(int max)

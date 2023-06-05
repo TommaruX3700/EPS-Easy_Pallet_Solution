@@ -1,3 +1,7 @@
+//Document: Pallet.cpp
+//
+//Description: Pallet class definition
+
 #include "..\..\headers\3D_Objects\Pallet.h"
 
 Pallet :: Pallet(float x, float y, float z)
@@ -29,12 +33,26 @@ dimensions_t Pallet:: Pallet :: get_Dims()
 
 void Pallet :: add_Pack(Pack* a, int index = NULL)
 {
-    (index == NULL) ? (this->pallet.push_back(a)) : (this->pallet.insert(this->pallet.begin() + index, a));
+    if (index == NULL) 
+    {
+        this->pallet.push_back(a);
+    }
+    else 
+    {
+        this->pallet.insert(this->pallet.begin() + index, a);
+    };
 }
 
 void Pallet :: remove_Pack(int index)
 {
-    (index < 0) ? (this->pallet.erase(this->pallet.end())) : (this->pallet.erase(this->pallet.begin() + index));    
+    if (index < 0)
+    {
+        this->pallet.erase(this->pallet.end());
+    } 
+    else 
+    { 
+        this->pallet.erase(this->pallet.begin() + index);
+    };
 }
 
 int Pallet :: pack_Count()

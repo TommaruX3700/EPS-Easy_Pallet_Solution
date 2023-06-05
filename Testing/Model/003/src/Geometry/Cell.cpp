@@ -1,3 +1,7 @@
+//Document: Cell.cpp
+//
+//Description: Cell class definition
+
 #include "..\..\headers\Geometry\Cell.h"
 
 Cell :: Cell() 

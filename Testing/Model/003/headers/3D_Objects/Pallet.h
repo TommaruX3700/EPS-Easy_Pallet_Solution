@@ -1,3 +1,7 @@
+//Document: Pallet.h
+//
+//Description: Pallet class declaration
+
 #pragma once
 #ifndef PALLET_H
 #define PALLET_H

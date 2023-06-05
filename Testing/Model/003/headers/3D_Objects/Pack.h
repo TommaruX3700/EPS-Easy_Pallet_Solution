@@ -1,3 +1,7 @@
+//Document: Pack.h
+//
+//Description: Pack class declaration
+
 #ifndef PACK_H  //"header guards", they prevents C++ header files from beign included multiple times
 #define PACK_H
 

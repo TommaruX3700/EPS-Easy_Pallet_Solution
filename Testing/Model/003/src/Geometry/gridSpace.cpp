@@ -1,9 +1,13 @@
-#include "..\..\headers\Geometry\gridSpace.h"
+//Document: GridSpace.cpp
+//
+//Description: 3D space class definition
+
+#include "..\..\headers\Geometry\GridSpace.h"
 #include "..\..\headers\Geometry\Cell.h"
 #include "..\..\headers\Geometry\DefinedGeometry.h"
 
 
-gridSpace :: gridSpace(int x, int y, int z) 
+GridSpace :: GridSpace(int x, int y, int z) 
 {
     //Constructor routine:
     //  > selects new plane
@@ -43,7 +47,7 @@ gridSpace :: gridSpace(int x, int y, int z)
 
 }
 
-gridSpace :: ~gridSpace()
+GridSpace :: ~GridSpace()
 {
     delete[] xyPlane.cell;
     delete[] xzPlane.cell;
