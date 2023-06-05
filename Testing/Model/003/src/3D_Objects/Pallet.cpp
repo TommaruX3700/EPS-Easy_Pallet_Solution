@@ -1,4 +1,4 @@
-#include "..\headers\Pallet.h"
+#include "..\..\headers\3D_Objects\Pallet.h"
 
 Pallet :: Pallet(float x, float y, float z)
 {   

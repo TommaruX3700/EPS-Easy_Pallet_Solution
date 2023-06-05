@@ -1,5 +1,5 @@
-#include "..\headers\2DPlane.h"
-#include "..\headers\Cell.h"
+#include "..\..\headers\Geometry\2DPlane.h"
+#include "..\..\headers\Geometry\Cell.h"
 
 virtual void 2DPlane :: set_occupiedCells(float c1, float c2, float dim1, float dim2){
     for(float i=(-dim1)/2; i<=dim1/2; i+=1){

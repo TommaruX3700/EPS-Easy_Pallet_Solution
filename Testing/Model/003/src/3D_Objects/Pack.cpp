@@ -2,7 +2,7 @@
 Declare here all the 3D objects used inside the project.
 */
 
-#include ".\Pack.h"
+#include "..\..\headers\3D_Objects\Pack.h"
 
 Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile)
 {
