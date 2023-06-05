@@ -28,9 +28,9 @@ void Pack :: set_dims(float x, float y, float z)
 
 void Pack :: set_centerCoords(float x, float y, float z)
 { 
-    this->center.cX = x;
-    this->center.cY = y;
-    this->center.cZ = z;
+    this->center.x = x;
+    this->center.y = y;
+    this->center.z = z;
 }
 
 void Pack :: set_weight(float kg)
@@ -94,7 +94,7 @@ void Pack :: set_packID(int n_collo){
 
 }
 
-Pack :: dimensions_t* Pack :: get_Dims(){
+dimensions_t* Pack :: get_Dims(){
     return &this->dims;     
 }
 
