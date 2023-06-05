@@ -14,12 +14,14 @@ set(CMAKE_BINARY_DIR ${pROJECT_SOURCE_DIR}/build)
 add_executable(${PROJECT_NAME} main.cpp)
 
 # Include headers from 3D_Objects & Geometry /headers directories
-include_directories(libraries/3D_Objects/headers)
-include_directories(libraries/Geometry/headers)
+# (TODO)
+# include_directories(libraries/3D_Objects/headers)
+# include_directories(libraries/Geometry/headers)
 
 # Add source files from 3D_Objects & Geometry /src directories
-file(GLOB SOURCES libraries/3D_Objects/src/*.cpp)
-file(GLOB SOURCES libraries/Geometry/src/*.cpp)
+# (TODO)
+# file(GLOB SOURCES libraries/3D_Objects/src/*.cpp)
+# file(GLOB SOURCES libraries/Geometry/src/*.cpp)
 
 # Add source files to the executable target
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})

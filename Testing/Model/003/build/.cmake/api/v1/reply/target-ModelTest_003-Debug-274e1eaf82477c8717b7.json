@@ -13,8 +13,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"include_directories"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -30,18 +29,6 @@
 				"file" : 0,
 				"line" : 14,
 				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 17,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 18,
-				"parent" : 0
 			}
 		]
 	},
@@ -52,17 +39,6 @@
 			[
 				{
 					"fragment" : "-g -std=gnu++11"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/libraries/3D_Objects/headers"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/libraries/Geometry/headers"
 				}
 			],
 			"language" : "CXX",

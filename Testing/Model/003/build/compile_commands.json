@@ -1,7 +1,7 @@
 [
 {
   "directory": "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/libraries/3D_Objects/headers -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/libraries/Geometry/headers -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\main.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\main.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
   "file": "C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
   "output": "CMakeFiles\\ModelTest_003.dir\\main.cpp.obj"
 }
