@@ -1,4 +1,4 @@
-#include "..\..\headers\Geometry\3DSpace.h"
+#include "..\..\headers\Geometry\gridSpace.h"
 #include "..\..\headers\Geometry\Cell.h"
 
 
