@@ -1,32 +1,23 @@
 #ifndef PACK_H  //"header guards", they prevents C++ header files from beign included multiple times
 #define PACK_H
 
+#include "..\Geometry\DefinedGeometry.h"
+
 class Pack
 {
     private:
-
-        struct dimensions_t     //custom type "dimensions"
-        {
-            float x, y, z;
-        }; 
-
-        struct centerCoords_t   //custom type "centerCoords"
-        {
-            float cX, cY, cZ;
-        };
-
         float weight;   //Unit: [kg]
         float density;  //Unit: [kg/m^3]
 
         dimensions_t dims;      //Note: those are the current dimensions effected by current orientation
         dimensions_t old_dims;  //Note: this old structure is    use to preserve the original orientation of the pack
-        centerCoords_t center;
+        dimensions_t center;
 
         int packID;
         bool rotatable;
         bool palletizable;
         
-        int packPalletIndex;    //TODO: this contains the Index of where it is inside a Vector (evaluate if usefull or not)
+        //int packPalletIndex;    //TODO: this contains the Index of where it is inside a Vector (evaluate if usefull or not)
 
     public:
 

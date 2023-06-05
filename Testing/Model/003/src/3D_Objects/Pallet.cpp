@@ -13,17 +13,17 @@ Pallet :: ~Pallet()
 
 void Pallet :: set_Dims(float x, float y, float z)
 {
-    this->dims.Xmax = x;
-    this->dims.Ymax = y;
-    this->dims.Zmax = z;
+    this->palletDims.x = x;
+    this->palletDims.y = y;
+    this->palletDims.z = z;
 }
 
-Pallet :: palletDims_t Pallet :: get_Dims()
+dimensions_t Pallet:: Pallet :: get_Dims()
 {
-    palletDims_t out;
-    out.Xmax = this->dims.Xmax;
-    out.Ymax = this->dims.Ymax;
-    out.Zmax = this->dims.Zmax;
+    dimensions_t out;
+    out.x = this->palletDims.x;
+    out.y = this->palletDims.y;
+    out.z = this->palletDims.z;
     return out;
 }
 
