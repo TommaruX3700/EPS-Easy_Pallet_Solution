@@ -1,32 +1,34 @@
 //Document: DefinedGeomety.h
 //
 //Description: user-defined geometric abstracions
+#pragma once
+#ifndef GEOM_H  
+#define GEOM_H
 
-#include "..\..\headers\Geometry\Cell.h"
+#include "Cell.h"
+#include "..\3D_Objects\Pack.h"
+
+//forward declarations (to avoid cirular dependencies)
 
 //dimensione dei Pacchi
-typedef struct dimensions_t     
-        {   
-            float x, y, z;
-        }; 
+
 
 //piani dello spazio 3D
-typedef struct plane_t   
+class Cell; 
+struct plane_t    
         {   
             int maxX, maxY;
             Cell** cell;
         };
 
 //singola cella dello spazio
-typedef struct cell_t
-        {   
-            float centerX, centerY; 
-            bool isFree;
-            Pack * pack = nullptr;
-        };
+class Pack;
+
 
 //coordinate dello spazio 3D
-typedef struct coords_t
+struct coords_t
         {
             float x, y, z;
         };
+
+#endif

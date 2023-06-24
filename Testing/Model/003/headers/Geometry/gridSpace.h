@@ -2,6 +2,11 @@
 //
 //Description: 3D space class declaration
 
+#ifndef GRID_H  
+#define GRID_H
+
+#include "DefinedGeometry.h"
+
 class GridSpace
 {
     private:
@@ -23,3 +28,5 @@ class GridSpace
 //  come base un altro metodo/funzione per l'occupazione singola di una cella.
 //  
 // es:  occupySpace(coords_t xyz, Pack* pack);
+
+#endif

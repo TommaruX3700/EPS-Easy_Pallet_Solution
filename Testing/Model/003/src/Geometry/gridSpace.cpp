@@ -3,8 +3,8 @@
 //Description: 3D space class definition
 
 #include "..\..\headers\Geometry\GridSpace.h"
-#include "..\..\headers\Geometry\Cell.h"
-#include "..\..\headers\Geometry\DefinedGeometry.h"
+// #include "..\..\headers\Geometry\Cell.h"
+// #include "..\..\headers\Geometry\DefinedGeometry.h"
 
 
 GridSpace :: GridSpace(int x, int y, int z) 

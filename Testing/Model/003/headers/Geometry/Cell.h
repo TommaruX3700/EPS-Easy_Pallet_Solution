@@ -2,7 +2,21 @@
 //
 //Description: Single cell class declaration
 
-#include "..\3D_Objects\Pack.h"
+#ifndef CELL_H  
+#define CELL_H
+
+#include "DefinedGeometry.h"
+
+//struct cell_t;
+
+class Pack;
+
+struct cell_t
+        {   
+            float centerX, centerY; 
+            bool isFree;
+            Pack * pack = nullptr;
+        };
 
 class Cell //punto della griglia
 {
@@ -13,3 +27,5 @@ class Cell //punto della griglia
         Cell();
         Cell(float dim1, float dim2);
 };
+
+#endif
