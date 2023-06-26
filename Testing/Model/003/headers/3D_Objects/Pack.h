@@ -9,11 +9,6 @@
 
 //struct dimensions_t;
 
-struct dimensions_t
-        {   
-            float x, y, z;
-        }; 
-
 class Pack
 {
     private:

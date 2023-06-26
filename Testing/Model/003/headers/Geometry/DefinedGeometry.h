@@ -11,7 +11,10 @@
 //forward declarations (to avoid cirular dependencies)
 
 //dimensione dei Pacchi
-
+struct dimensions_t
+        {   
+            float x, y, z;
+        }; 
 
 //piani dello spazio 3D
 class Cell; 
