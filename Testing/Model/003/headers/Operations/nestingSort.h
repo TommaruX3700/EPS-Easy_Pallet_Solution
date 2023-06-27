@@ -1,3 +1,6 @@
 //functions for the nestingSort
 
-void nesting(Pack * input);
+#include "..\3D_Objects\Pack.h"
+#include <vector>
+
+int sortBeforeNesting(std::vector<Pack>* input, std::vector<Pack>* output, std::vector<Pack>* notNestable, double* palletArea);

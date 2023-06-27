@@ -11,22 +11,22 @@
 
 GridSpace grid = GridSpace(10, 10, 10);
 
-std::vector<Pack> input; //input, pacchi ordinati
-std::vector<Pack> packsToNest; 
-std::vector<Pack> outputNOTNested;
+std::vector<Pack> input; //input, pacchi ordinati dal json
+std::vector<Pack> packsToNest; //pacchi da Nestare
+
+std::vector<Pack> outputNOTNested; //pacchi non Nestabili
+std::vector<Pack> output; //nested output
 
 Pallet pallet;
 
 int main()
 {
     //TODO: add application loop + error codes
-
     try
     {    
-        double areaPallet = pallet.get_Dims().x * pallet.get_Dims().y;
         //nestingSort
-
-    
+        double areaPallet = pallet.get_Dims().x * pallet.get_Dims().y;
+        while (sortBeforeNesting( &input, &packsToNest, &outputNOTNested, &areaPallet));
     }
     catch(const std::exception& e)
     {
@@ -37,8 +37,5 @@ int main()
         std::cerr << "main :: nestingSort :: unknown exception caught, exiting..." << std::endl;
         return 0;
     }
-    
-
-   
    return 0;
 }

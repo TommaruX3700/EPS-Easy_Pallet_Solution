@@ -2,21 +2,31 @@
 
 #include "..\..\headers\Operations\nestingSort.h"
 
-void nesting(Pack * input)
+int sortBeforeNesting(std::vector<Pack>* input, std::vector<Pack>* output, std::vector<Pack>* notNestable, double* palletArea)
 {
         static double tempAreaPacco = 0;
         static int index = 0;
-        do{
-            packToCheck = input(index)
-            tempAreaPacco = packToCheck.dimX*packToCheck.dimY
-            if(areaPallet - tempAreaPacco){
-                packsToNest.append(packToCheck)
-                areaPallet -= tempAreaPacco
-                index++
-            } else {
-                outputNOTNested.append(packToCheck)
-                index++
+        static Pack* packToCheck = new Pack();
+
+        if (index < input->size())
+        {
+            *packToCheck = input->at(index);
+            tempAreaPacco = *packToCheck.get_Dims()->x * *packToCheck.get_Dims()->y;
+            if(*palletArea - tempAreaPacco)
+            {
+                output->push_back(*packToCheck);
+                *palletArea -= tempAreaPacco;
+                index++;
+            } 
+            else 
+            {
+                notNestable->push_back(*packToCheck);
+                index++;
             }
-        } while (index < packsToNest.size())
+            return 1; //I still have packs to controll
+        }
+        delete packToCheck;
+        index = 0;
+        return 0; //no more packs to controll
 }
 
