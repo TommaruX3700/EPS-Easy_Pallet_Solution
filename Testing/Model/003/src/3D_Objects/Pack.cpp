@@ -12,10 +12,7 @@ Pack :: Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile)
     set_isRotatable(ruotabile);
 }
 
-Pack :: ~Pack(){
-    //TODO: implement this one
-    
-}
+Pack :: ~Pack(){}
 
 void Pack :: set_dims(float x, float y, float z)
 {

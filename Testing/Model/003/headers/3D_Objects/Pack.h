@@ -30,6 +30,28 @@ class Pack
 //CONSTRUCTORS
         Pack(){}                                                                        //generic constructor
         Pack(float X, float Y, float Z, float WGHT, int n_collo, bool ruotabile);       //specific constructor
+
+        Pack& operator=(const Pack& n)                                                  //"=" operator override "copy constructor"
+        {
+                if (this != &n)
+                {
+                        // if (&weight != 0 && &density != 0 && &dims != 0 && &old_dims != 0 && &center != 0 && &)
+                        // {
+                        //         // pulisci variabili
+                        // }
+                        //copia le variabili nel nuovo oggetto
+                        weight = n.weight;
+                        density = n.density;
+                        dims = n.dims;
+                        old_dims = n.dims;
+                        center = n.center;
+                        packID = n.packID;
+                        rotatable = n.rotatable;
+                        palletizable = n.palletizable;
+                }
+                return *this;
+        };                                                 
+
         ~Pack();                                                                        //TODO: implement distructor
 
 //SET-METHODS
