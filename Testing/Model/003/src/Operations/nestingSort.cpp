@@ -11,7 +11,7 @@ int sortBeforeNesting(std::vector<Pack>* input, std::vector<Pack>* output, std::
         if (index < input->size())
         {
             *packToCheck = input->at(index);
-            tempAreaPacco = *packToCheck.get_Dims()->x * *packToCheck.get_Dims()->y;
+            tempAreaPacco = packToCheck->get_Dims()->x * packToCheck->get_Dims()->y;
             if(*palletArea - tempAreaPacco)
             {
                 output->push_back(*packToCheck);

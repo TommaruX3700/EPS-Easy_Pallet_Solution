@@ -11,7 +11,7 @@
 
 GridSpace grid = GridSpace(10, 10, 10);
 
-std::vector<Pack> input; //input, pacchi ordinati dal json
+std::vector<Pack> sortedInput; //input, pacchi ordinati dal json
 std::vector<Pack> packsToNest; //pacchi da Nestare
 
 std::vector<Pack> outputNOTNested; //pacchi non Nestabili
@@ -26,7 +26,7 @@ int main()
     {    
         //nestingSort
         double areaPallet = pallet.get_Dims().x * pallet.get_Dims().y;
-        while (sortBeforeNesting( &input, &packsToNest, &outputNOTNested, &areaPallet));
+        while (sortBeforeNesting( &sortedInput, &packsToNest, &outputNOTNested, &areaPallet));
     }
     catch(const std::exception& e)
     {
