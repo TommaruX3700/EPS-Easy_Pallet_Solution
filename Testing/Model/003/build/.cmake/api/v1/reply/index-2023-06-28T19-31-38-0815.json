@@ -18,8 +18,8 @@
 			"isDirty" : false,
 			"major" : 3,
 			"minor" : 26,
-			"patch" : 3,
-			"string" : "3.26.3",
+			"patch" : 4,
+			"string" : "3.26.4",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-ef85bd5070ca69d22e3d.json",
+			"jsonFile" : "cache-v2-4fecaeb77961633a0ad7.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-b8c6a164d75f0f58e588.json",
+			"jsonFile" : "cmakeFiles-v1-c123df93dfa2165b9998.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-ef85bd5070ca69d22e3d.json",
+						"jsonFile" : "cache-v2-4fecaeb77961633a0ad7.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-b8c6a164d75f0f58e588.json",
+						"jsonFile" : "cmakeFiles-v1-c123df93dfa2165b9998.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
