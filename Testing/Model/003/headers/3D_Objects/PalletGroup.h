@@ -1,6 +1,6 @@
-//Document: PalletGroup.h
+// Document: PalletGroup.h
 //
-//Description: Pallet group class declaration
+// Description: Pallet group class declaration
 
 #pragma once
 #ifndef PALLETGROUP_H
@@ -12,22 +12,21 @@
 
 class PalletGroup
 {
-    private:
-        std :: vector<Pallet *> palletGroup; //vector or a pointers to pallet groups
-        int max = 0; //Note: "max" indicates the max number of possible pallets. If exceded another PalletGroup should be created. 0 means no limit.
-    
-    public:
-        PalletGroup();              //Note: generic constructor
-        PalletGroup(int max);       //Note: specific constructor
-        ~PalletGroup();
+private:
+    std ::vector<Pallet *> palletGroup; // vector or a pointers to pallet groups
+    int max = 0;                        // Note: "max" indicates the max number of possible pallets. If exceded another PalletGroup should be created. 0 means no limit.
 
-        void set_maximum(int a);
+public:
+    PalletGroup();        // Note: generic constructor
+    PalletGroup(int max); // Note: specific constructor
+    ~PalletGroup();
 
-        int add_Pallet(Pallet* pallet);
-        void remove_Pallet(int index = NULL);
+    void set_maximum(int a);
 
-        int pallet_Count();
+    int add_Pallet(Pallet *pallet);
+    void remove_Pallet(int index = NULL);
 
+    int pallet_Count();
 };
 
 #endif

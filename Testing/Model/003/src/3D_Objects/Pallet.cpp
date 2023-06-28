@@ -1,28 +1,28 @@
-//Document: Pallet.cpp
+// Document: Pallet.cpp
 //
-//Description: Pallet class definition
+// Description: Pallet class definition
 
 #include "..\..\headers\3D_Objects\Pallet.h"
 
-Pallet :: Pallet(float x, float y, float z)
-{   
+Pallet::Pallet(float x, float y, float z)
+{
     set_Dims(x, y, z);
     this->pallet.clear();
 }
 
-Pallet :: ~Pallet()
+Pallet::~Pallet()
 {
     this->pallet.clear();
 }
 
-void Pallet :: set_Dims(float x, float y, float z)
+void Pallet::set_Dims(float x, float y, float z)
 {
     this->palletDims.x = x;
     this->palletDims.y = y;
     this->palletDims.z = z;
 }
 
-dimensions_t Pallet:: Pallet :: get_Dims()
+dimensions_t Pallet::Pallet::get_Dims()
 {
     dimensions_t out;
     out.x = this->palletDims.x;
@@ -31,31 +31,31 @@ dimensions_t Pallet:: Pallet :: get_Dims()
     return out;
 }
 
-void Pallet :: add_Pack(Pack* a, int index = NULL)
+void Pallet::add_Pack(Pack *a, int index = NULL)
 {
-    if (index == NULL) 
+    if (index == NULL)
     {
         this->pallet.push_back(a);
     }
-    else 
+    else
     {
         this->pallet.insert(this->pallet.begin() + index, a);
     };
 }
 
-void Pallet :: remove_Pack(int index)
+void Pallet::remove_Pack(int index)
 {
     if (index < 0)
     {
         this->pallet.erase(this->pallet.end());
-    } 
-    else 
-    { 
+    }
+    else
+    {
         this->pallet.erase(this->pallet.begin() + index);
     };
 }
 
-int Pallet :: pack_Count()
+int Pallet::pack_Count()
 {
     return this->pallet.size();
 }

@@ -1,21 +1,20 @@
-//Document: GridSpace.cpp
+// Document: GridSpace.cpp
 //
-//Description: 3D space class definition
+// Description: 3D space class definition
 
 #include "..\..\headers\Geometry\GridSpace.h"
 // #include "..\..\headers\Geometry\Cell.h"
 // #include "..\..\headers\Geometry\DefinedGeometry.h"
 
-
-GridSpace :: GridSpace(int x, int y, int z) 
+GridSpace::GridSpace(int x, int y, int z)
 {
-    //Constructor routine:
-    //  > selects new plane
-    //  > creates new Cell vector of the specified dimension
-    //  > for each of these cells, creates another array of the other dimension
-    //  > fills every cell information with their POSITION (on the plane) and STATE (occupied or free, free by default)
+    // Constructor routine:
+    //   > selects new plane
+    //   > creates new Cell vector of the specified dimension
+    //   > for each of these cells, creates another array of the other dimension
+    //   > fills every cell information with their POSITION (on the plane) and STATE (occupied or free, free by default)
 
-    xyPlane.cell = new Cell*[x];
+    xyPlane.cell = new Cell *[x];
     for (int i = 0; i < x; i++)
     {
         xyPlane.cell[i] = new Cell[y];
@@ -24,8 +23,8 @@ GridSpace :: GridSpace(int x, int y, int z)
             xyPlane.cell[i][j] = Cell((float)i, (float)j);
         }
     }
-    
-    xzPlane.cell = new Cell*[x];
+
+    xzPlane.cell = new Cell *[x];
     for (int i = 0; i < x; i++)
     {
         xzPlane.cell[i] = new Cell[y];
@@ -35,7 +34,7 @@ GridSpace :: GridSpace(int x, int y, int z)
         }
     }
 
-    yzPlane.cell = new Cell*[x];
+    yzPlane.cell = new Cell *[x];
     for (int i = 0; i < x; i++)
     {
         yzPlane.cell[i] = new Cell[y];
@@ -44,12 +43,11 @@ GridSpace :: GridSpace(int x, int y, int z)
             yzPlane.cell[i][j] = Cell((float)i, (float)j);
         }
     }
-
 }
 
-GridSpace :: ~GridSpace()
+GridSpace::~GridSpace()
 {
     delete[] xyPlane.cell;
     delete[] xzPlane.cell;
-    delete[] yzPlane.cell;    
+    delete[] yzPlane.cell;
 }

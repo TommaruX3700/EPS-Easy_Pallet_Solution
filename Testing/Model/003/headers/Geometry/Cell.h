@@ -1,31 +1,31 @@
-//Document: Cell.h
+// Document: Cell.h
 //
-//Description: Single cell class declaration
+// Description: Single cell class declaration
 
-#ifndef CELL_H  
+#ifndef CELL_H
 #define CELL_H
 
 #include "DefinedGeometry.h"
 
-//struct cell_t;
+// struct cell_t;
 
 class Pack;
 
 struct cell_t
-        {   
-            float centerX, centerY; 
-            bool isFree;
-            Pack * pack = nullptr;
-        };
-
-class Cell //punto della griglia
 {
-    private:
-        cell_t cell;
+    float centerX, centerY;
+    bool isFree;
+    Pack *pack = nullptr;
+};
 
-    public:
-        Cell();
-        Cell(float dim1, float dim2);
+class Cell // punto della griglia
+{
+private:
+    cell_t cell;
+
+public:
+    Cell();
+    Cell(float dim1, float dim2);
 };
 
 #endif
