@@ -1,20 +1,14 @@
 [
 {
   "directory": "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\main.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Operations -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\main.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
   "file": "C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\main.cpp",
   "output": "CMakeFiles\\ModelTest_003.dir\\main.cpp.obj"
 },
 {
   "directory": "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\src\\Geometry\\Cell.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Geometry\\Cell.cpp",
-  "file": "C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Geometry\\Cell.cpp",
-  "output": "CMakeFiles\\ModelTest_003.dir\\src\\Geometry\\Cell.cpp.obj"
-},
-{
-  "directory": "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\src\\Geometry\\GridSpace.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Geometry\\GridSpace.cpp",
-  "file": "C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Geometry\\GridSpace.cpp",
-  "output": "CMakeFiles\\ModelTest_003.dir\\src\\Geometry\\GridSpace.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry -IC:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Operations -g -std=gnu++11 -o CMakeFiles\\ModelTest_003.dir\\src\\Operations\\nestingSort.cpp.obj -c C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Operations\\nestingSort.cpp",
+  "file": "C:\\Users\\TomX37\\Documents\\0-repos_VisualStudioCode\\EPS-Easy_Pallet_Solution\\Testing\\Model\\003\\src\\Operations\\nestingSort.cpp",
+  "output": "CMakeFiles\\ModelTest_003.dir\\src\\Operations\\nestingSort.cpp.obj"
 }
 ]

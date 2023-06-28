@@ -45,9 +45,15 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 27,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -70,6 +76,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Operations"
 				}
 			],
 			"language" : "CXX",
@@ -84,8 +94,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -123,8 +132,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -137,15 +145,9 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
-			"path" : "src/Geometry/Cell.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "src/Geometry/GridSpace.cpp",
+			"path" : "src/Operations/nestingSort.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

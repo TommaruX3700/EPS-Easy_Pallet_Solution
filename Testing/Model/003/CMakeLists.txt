@@ -17,11 +17,13 @@ add_executable(${PROJECT_NAME} main.cpp)
 # (TODO)
 include_directories(headers/3D_Objects)
 include_directories(headers/Geometry)
+include_directories(headers/Operations)
 
 # Add source files from 3D_Objects & Geometry /src directories
 # (TODO)
 file(GLOB SOURCES src/3D_Objects/*.cpp)
 file(GLOB SOURCES src/Geometry/*.cpp)
+file(GLOB SOURCES src/Operations/*.cpp)
 
 # Add source files to the executable target
 target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
