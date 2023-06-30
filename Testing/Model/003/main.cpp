@@ -40,4 +40,14 @@ int main()
     }
     std::cout << "main :: All operations done!" << std::endl;
     return 0;
+
+    try
+    {
+        //
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    
 }
