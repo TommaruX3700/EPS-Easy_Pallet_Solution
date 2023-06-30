@@ -7,17 +7,6 @@
 
 #include "DefinedGeometry.h"
 
-// struct cell_t;
-
-class Pack;
-
-struct cell_t
-{
-    float centerX, centerY;
-    bool isFree;
-    Pack *pack = nullptr;
-};
-
 class Cell // punto della griglia
 {
 private:
