@@ -10,7 +10,7 @@
 class Cell // punto della griglia
 {
 private:
-    cell_t cell;
+    cellGraph cell;
 
 public:
     Cell();

@@ -1,6 +1,6 @@
 class definedObject
 {
-    protected:
+    public:
         //real dimensions
         float x, y, z;
             
