@@ -91,7 +91,7 @@ void Pack::set_packID(int n_collo)
     this->packID = n_collo;
 }
 
-dimensions_t *Pack::get_Dims()
+definedObject *Pack::get_Dims()
 {
     return &this->dims;
 }
