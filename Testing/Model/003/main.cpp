@@ -9,6 +9,8 @@
 
 #include "headers\Operations\nestingSort.h"
 
+#define DEBUG 1   //definisce se verrà emesso un output di debug     1:ON 0:OFF
+
 GridSpace grid = GridSpace(10, 10, 10);
 
 std::vector<Pack> sortedInput; // input, pacchi ordinati dal json
