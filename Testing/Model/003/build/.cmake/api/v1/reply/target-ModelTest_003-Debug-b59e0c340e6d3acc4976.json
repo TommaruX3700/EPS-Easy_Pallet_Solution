@@ -71,15 +71,15 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/tmaruzzo/Documents/VSCODE_repos/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects"
+					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/3D_Objects"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/tmaruzzo/Documents/VSCODE_repos/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry"
+					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Geometry"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/tmaruzzo/Documents/VSCODE_repos/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Operations"
+					"path" : "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/headers/Operations"
 				}
 			],
 			"language" : "CXX",

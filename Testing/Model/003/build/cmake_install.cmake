@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/tmaruzzo/Documents/VSCODE_repos/EPS-Easy_Pallet_Solution/Testing/Model/003
+# Install script for directory: C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tmaruzzo/Documents/VSCODE_repos/EPS-Easy_Pallet_Solution/Testing/Model/003/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/TomX37/Documents/0-repos_VisualStudioCode/EPS-Easy_Pallet_Solution/Testing/Model/003/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
