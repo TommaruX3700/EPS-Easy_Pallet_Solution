@@ -22,9 +22,9 @@ void Pallet::set_Dims(float x, float y, float z)
     this->palletDims.z = z;
 }
 
-dimensions_t Pallet::Pallet::get_Dims()
+definedObject Pallet::Pallet::get_Dims()
 {
-    dimensions_t out;
+    definedObject out;
     out.x = this->palletDims.x;
     out.y = this->palletDims.y;
     out.z = this->palletDims.z;

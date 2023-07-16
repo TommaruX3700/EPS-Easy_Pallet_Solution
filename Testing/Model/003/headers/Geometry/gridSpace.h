@@ -10,9 +10,9 @@
 class GridSpace
 {
 private:
-    plane_t xyPlane;
-    plane_t xzPlane;
-    plane_t yzPlane;
+    planeGraph xyPlane;
+    planeGraph xzPlane;
+    planeGraph yzPlane;
 
 public:
     GridSpace(int x, int y, int z);
