@@ -62,7 +62,7 @@ CMakeLists.txt.user*
 *.ib_pdb_index
 *.idb
 *.ilk
-*.pdb
+#*.pdb
 *.sln
 *.suo
 *.vcproj
@@ -82,6 +82,6 @@ CMakeLists.txt.user*
 
 # Binaries
 # --------
-*.dll
-*.exe
+#*.dll
+#*.exe
 
