@@ -4,28 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "7889a27a94bbf53e",
-        "type": "tabs",
-        "dimension": 41.67397020157757,
-        "children": [
-          {
-            "id": "d97f90897c60a850",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Architecture/main.cpp.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "6095c5becfb30472",
         "type": "tabs",
-        "dimension": 58.32602979842244,
         "children": [
           {
             "id": "5b0459c33e08c7e2",
@@ -168,50 +148,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "fac9c47c68cf74db",
-    "type": "floating",
-    "children": [
-      {
-        "id": "196fcb818cb426ea",
-        "type": "window",
-        "children": [
-          {
-            "id": "4e10c70a3f59977b",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "411af9087b56d01a",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "Architecture/Relations.canvas",
-                    "viewState": {
-                      "x": 1976.1027892565303,
-                      "y": -5718.347032974833,
-                      "zoom": -1.5857236529517307
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1121,
-        "y": 463,
-        "width": 1024,
-        "height": 800,
-        "maximize": true,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "5b0459c33e08c7e2",
   "lastOpenFiles": [
-    "Architecture/main.cpp.md",
+    "Logic-Algorithm.canvas",
+    "Untitled.canvas",
+    "README.md",
     "Architecture/Relations.canvas",
+    "Architecture/main.cpp.md",
     "Architecture/src/entities/physical/Pallet.cpp.md",
     "Architecture/src/entities/physical/PalletGroup.cpp.md",
     "Architecture/src/entities/physical/Pack.cpp.md",
@@ -235,13 +178,11 @@
     "Architecture/src/entities/geometry/Grid.cpp.md",
     "Architecture/src/entities/geometry/Plane.cpp.md",
     "Architecture/headers/logic/sceltaPacchiNesting.hpp.md",
-    "Architecture/headers/logic/spostaPacchi.hpp.md",
     "Architecture/src/logic/spostaPacchi",
     "Architecture/src/logic/ottimizzazione",
     "Architecture/src/logic/sceltaPacchiNesting",
     "Architecture/src/logic/trovaDominio",
     "Architecture/src/logic/ordinamentoPacchi",
-    "Logic-Algorithm.canvas",
     "Architecture/headers/entities/logic",
     "Architecture/src/entities/physical",
     "Architecture/headers/entities/physical",
