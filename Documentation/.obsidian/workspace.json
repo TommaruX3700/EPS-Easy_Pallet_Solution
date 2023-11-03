@@ -6,6 +6,7 @@
       {
         "id": "7889a27a94bbf53e",
         "type": "tabs",
+        "dimension": 41.67397020157757,
         "children": [
           {
             "id": "d97f90897c60a850",
@@ -17,6 +18,21 @@
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "6095c5becfb30472",
+        "type": "tabs",
+        "dimension": 58.32602979842244,
+        "children": [
+          {
+            "id": "5b0459c33e08c7e2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -172,25 +188,11 @@
                   "state": {
                     "file": "Architecture/Relations.canvas",
                     "viewState": {
-                      "x": 2783.6368023798113,
-                      "y": -6085.224085594071,
-                      "zoom": -0.5857236529517309
+                      "x": 1976.1027892565303,
+                      "y": -5718.347032974833,
+                      "zoom": -1.5857236529517307
                     }
                   }
-                }
-              }
-            ]
-          },
-          {
-            "id": "4aa332d372e9899d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5b0459c33e08c7e2",
-                "type": "leaf",
-                "state": {
-                  "type": "graph",
-                  "state": {}
                 }
               }
             ]
@@ -209,41 +211,41 @@
   "active": "5b0459c33e08c7e2",
   "lastOpenFiles": [
     "Architecture/main.cpp.md",
-    "Architecture/headers/logic/ottimizzazione.h.md",
-    "Architecture/headers/logic/ordinamentoPacchi.h.md",
-    "Architecture/headers/logic/genericIncludes.h.md",
-    "Architecture/headers/logic/trovaDominio.h.md",
-    "Architecture/headers/logic/spostaPacchi.h.md",
-    "Architecture/headers/logic/sceltaPacchiNesting.h.md",
     "Architecture/Relations.canvas",
-    "Architecture/src/logic/trovaDominio/op1_trovaDominio.cpp.md",
-    "Architecture/src/logic/trovaDominio/trovaDominio.mod.cpp.md",
-    "Architecture/src/logic/spostaPacchi/op1_spostaPacchi.cpp.md",
-    "Architecture/src/logic/spostaPacchi/spostaPacchi.mod.cpp.md",
-    "Architecture/src/logic/sceltaPacchiNesting/op1_sceltaPacchiNesting.cpp.md",
-    "Architecture/src/logic/sceltaPacchiNesting/sceltaPacchiNesting.mod.cpp.md",
-    "Architecture/src/logic/ottimizzazione/op1_ottimizzazione.cpp.md",
-    "Architecture/src/logic/ottimizzazione/ottimizzazione.mod.cpp.md",
-    "Architecture/src/logic/ordinamentoPacchi/op1_ordinamentoPacchi.cpp.md",
-    "Architecture/src/logic/ordinamentoPacchi/ordinamentoPacchi.mod.cpp.md",
+    "Architecture/src/entities/physical/Pallet.cpp.md",
+    "Architecture/src/entities/physical/PalletGroup.cpp.md",
+    "Architecture/src/entities/physical/Pack.cpp.md",
+    "Architecture/src/entities/physical/3D_object.cpp.md",
+    "Architecture/headers/entities/geometry/Plane.h.md",
+    "Architecture/headers/entities/geometry/Grid.h.md",
+    "Architecture/headers/entities/geometry/Geometry.h.md",
+    "Architecture/headers/entities/geometry/Cell.h.md",
+    "Architecture/headers/entities/physical/PalletGroup.h.md",
+    "Architecture/headers/entities/physical/Pallet.h.md",
+    "Architecture/headers/entities/physical/Pack.h.md",
+    "Architecture/headers/entities/physical/3D_object.h.md",
+    "Architecture/headers/logic/ordinamentoPacchi.hpp.md",
+    "Architecture/headers/logic/ottimizzazione.hpp.md",
+    "Architecture/src/logic/ordinamentoPacchi/ordinamentoPacchi.cpp.md",
+    "Architecture/src/logic/ottimizzazione/ottimizzazione.cpp.md",
+    "Architecture/src/logic/sceltaPacchiNesting/sceltaPacchiNesting.cpp.md",
+    "Architecture/src/logic/spostaPacchi/spostaPacchi.cpp.md",
+    "Architecture/src/logic/trovaDominio/trovaDominio.cpp.md",
+    "Architecture/src/entities/geometry/Cell.cpp.md",
+    "Architecture/src/entities/geometry/Grid.cpp.md",
+    "Architecture/src/entities/geometry/Plane.cpp.md",
+    "Architecture/headers/logic/sceltaPacchiNesting.hpp.md",
+    "Architecture/headers/logic/spostaPacchi.hpp.md",
     "Architecture/src/logic/spostaPacchi",
     "Architecture/src/logic/ottimizzazione",
     "Architecture/src/logic/sceltaPacchiNesting",
     "Architecture/src/logic/trovaDominio",
     "Architecture/src/logic/ordinamentoPacchi",
     "Logic-Algorithm.canvas",
-    "README.md",
     "Architecture/headers/entities/logic",
-    "Architecture/src/entities/geometry/Plane.cpp.md",
     "Architecture/src/entities/physical",
     "Architecture/headers/entities/physical",
     "Architecture/src/entities/geometry",
-    "Architecture/headers/entities/geometry",
-    "Architecture/src/entities/physical/PalletGroup.cpp.md",
-    "Architecture/src/entities/physical/Pallet.cpp.md",
-    "Architecture/src/entities/physical/Pack.cpp.md",
-    "Architecture/src/entities/geometry/Grid.cpp.md",
-    "Architecture/src/entities/geometry/Cell.cpp.md",
-    "Architecture/src/entities/physical/3D_object.cpp.md"
+    "Architecture/headers/entities/geometry"
   ]
 }

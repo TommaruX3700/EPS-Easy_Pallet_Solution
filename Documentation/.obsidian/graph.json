@@ -6,17 +6,46 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:Architecture/headers/entities  ",
+      "color": {
+        "a": 1,
+        "rgb": 11216616
+      }
+    },
+    {
+      "query": "path:Architecture/headers/logic  ",
+      "color": {
+        "a": 1,
+        "rgb": 968765
+      }
+    },
+    {
+      "query": "file:main.cpp",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:Architecture/src  ",
+      "color": {
+        "a": 1,
+        "rgb": 16774927
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": true,
-  "textFadeMultiplier": -0.7,
-  "nodeSizeMultiplier": 1.4015625,
-  "lineSizeMultiplier": 3.315625,
+  "textFadeMultiplier": -1.3,
+  "nodeSizeMultiplier": 2.09022623697917,
+  "lineSizeMultiplier": 5,
   "collapse-forces": true,
   "centerStrength": 0.645833333333333,
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 118,
-  "scale": 0.7132754626224446,
+  "scale": 0.5087618855792647,
   "close": false
 }
