@@ -4,21 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "de0626ea0a921e2d",
+        "id": "7889a27a94bbf53e",
         "type": "tabs",
         "children": [
           {
-            "id": "5b0459c33e08c7e2",
+            "id": "d97f90897c60a850",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Relations.canvas",
-                "viewState": {
-                  "x": 1195.5555882352942,
-                  "y": -5656.846617647059,
-                  "zoom": -3.603285974539621
-                }
+                "file": "Architecture/main.cpp.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -72,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 234.5
   },
   "right": {
     "id": "c7eb92ad6b1d5635",
@@ -88,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Relations.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Relations.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,8 +122,16 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "918ae628c5c418a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
               "state": {
-                "file": "Relations.canvas"
+                "sortOrder": "frequency"
               }
             }
           }
@@ -142,15 +145,105 @@
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
+      "graph:Open graph view": false,
       "command-palette:Open command palette": false
     }
   },
+  "floating": {
+    "id": "fac9c47c68cf74db",
+    "type": "floating",
+    "children": [
+      {
+        "id": "196fcb818cb426ea",
+        "type": "window",
+        "children": [
+          {
+            "id": "4e10c70a3f59977b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "411af9087b56d01a",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Architecture/Relations.canvas",
+                    "viewState": {
+                      "x": 2783.6368023798113,
+                      "y": -6085.224085594071,
+                      "zoom": -0.5857236529517309
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "4aa332d372e9899d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5b0459c33e08c7e2",
+                "type": "leaf",
+                "state": {
+                  "type": "graph",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -1121,
+        "y": 463,
+        "width": 1024,
+        "height": 800,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "5b0459c33e08c7e2",
   "lastOpenFiles": [
-    "Logic-Algorithm.canvas"
+    "Architecture/main.cpp.md",
+    "Architecture/headers/logic/ottimizzazione.h.md",
+    "Architecture/headers/logic/ordinamentoPacchi.h.md",
+    "Architecture/headers/logic/genericIncludes.h.md",
+    "Architecture/headers/logic/trovaDominio.h.md",
+    "Architecture/headers/logic/spostaPacchi.h.md",
+    "Architecture/headers/logic/sceltaPacchiNesting.h.md",
+    "Architecture/Relations.canvas",
+    "Architecture/src/logic/trovaDominio/op1_trovaDominio.cpp.md",
+    "Architecture/src/logic/trovaDominio/trovaDominio.mod.cpp.md",
+    "Architecture/src/logic/spostaPacchi/op1_spostaPacchi.cpp.md",
+    "Architecture/src/logic/spostaPacchi/spostaPacchi.mod.cpp.md",
+    "Architecture/src/logic/sceltaPacchiNesting/op1_sceltaPacchiNesting.cpp.md",
+    "Architecture/src/logic/sceltaPacchiNesting/sceltaPacchiNesting.mod.cpp.md",
+    "Architecture/src/logic/ottimizzazione/op1_ottimizzazione.cpp.md",
+    "Architecture/src/logic/ottimizzazione/ottimizzazione.mod.cpp.md",
+    "Architecture/src/logic/ordinamentoPacchi/op1_ordinamentoPacchi.cpp.md",
+    "Architecture/src/logic/ordinamentoPacchi/ordinamentoPacchi.mod.cpp.md",
+    "Architecture/src/logic/spostaPacchi",
+    "Architecture/src/logic/ottimizzazione",
+    "Architecture/src/logic/sceltaPacchiNesting",
+    "Architecture/src/logic/trovaDominio",
+    "Architecture/src/logic/ordinamentoPacchi",
+    "Logic-Algorithm.canvas",
+    "README.md",
+    "Architecture/headers/entities/logic",
+    "Architecture/src/entities/geometry/Plane.cpp.md",
+    "Architecture/src/entities/physical",
+    "Architecture/headers/entities/physical",
+    "Architecture/src/entities/geometry",
+    "Architecture/headers/entities/geometry",
+    "Architecture/src/entities/physical/PalletGroup.cpp.md",
+    "Architecture/src/entities/physical/Pallet.cpp.md",
+    "Architecture/src/entities/physical/Pack.cpp.md",
+    "Architecture/src/entities/geometry/Grid.cpp.md",
+    "Architecture/src/entities/geometry/Cell.cpp.md",
+    "Architecture/src/entities/physical/3D_object.cpp.md"
   ]
 }
