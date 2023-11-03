@@ -6,6 +6,7 @@
       {
         "id": "6095c5becfb30472",
         "type": "tabs",
+        "dimension": 53.14498933901919,
         "children": [
           {
             "id": "5b0459c33e08c7e2",
@@ -13,6 +14,25 @@
             "state": {
               "type": "graph",
               "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "cf8146f643a28854",
+        "type": "tabs",
+        "dimension": 46.85501066098081,
+        "children": [
+          {
+            "id": "02dc4c57e8a7ccd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Architecture/headers/entities/geometry/Geometry.h.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 234.5,
+    "collapsed": true
   },
   "right": {
     "id": "c7eb92ad6b1d5635",
@@ -150,6 +171,10 @@
   },
   "active": "5b0459c33e08c7e2",
   "lastOpenFiles": [
+    "Architecture/headers/entities/geometry/Geometry.h.md",
+    "Architecture/headers/entities/physical/3D_object.h.md",
+    "Architecture/headers/entities/geometry/Cell.h.md",
+    "Architecture/headers/logic/ordinamentoPacchi.hpp.md",
     "Logic-Algorithm.canvas",
     "Untitled.canvas",
     "README.md",
@@ -161,13 +186,9 @@
     "Architecture/src/entities/physical/3D_object.cpp.md",
     "Architecture/headers/entities/geometry/Plane.h.md",
     "Architecture/headers/entities/geometry/Grid.h.md",
-    "Architecture/headers/entities/geometry/Geometry.h.md",
-    "Architecture/headers/entities/geometry/Cell.h.md",
     "Architecture/headers/entities/physical/PalletGroup.h.md",
     "Architecture/headers/entities/physical/Pallet.h.md",
     "Architecture/headers/entities/physical/Pack.h.md",
-    "Architecture/headers/entities/physical/3D_object.h.md",
-    "Architecture/headers/logic/ordinamentoPacchi.hpp.md",
     "Architecture/headers/logic/ottimizzazione.hpp.md",
     "Architecture/src/logic/ordinamentoPacchi/ordinamentoPacchi.cpp.md",
     "Architecture/src/logic/ottimizzazione/ottimizzazione.cpp.md",
