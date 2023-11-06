@@ -22,7 +22,7 @@ std::vector<Pallet*> palletGroup; //OUTPUT_MAIN a fini di debug e testing: da ca
 
 ### Organizzazione: 
 
-1. Lettura json e compilazione "input" 
+1. Refactoring del codice di lettura del file json. 
 2. Loop pallet (fino a quando non finiscono i pacchi in "input")
 	1. esegue modulo "Ordinamento Input"
 	2. esegue modulo "SceltaPacchiNesting"
@@ -38,4 +38,8 @@ std::vector<Pallet*> palletGroup; //OUTPUT_MAIN a fini di debug e testing: da ca
 * Questo algoritmo esegue il flusso del codice in maniera ordinata, gestendo tutti i diversi blocchi di codice tramite INPUT e OUTPUT ben definiti (no rougue variables).
 * Nel main vanno definiti tutti i cicli principali dell'applicazione.
 * Passare le variabili x riferimento
-* 
+
+--- 
+
+INPUT: posizione del file json
+OUTPUT: stringa lista organizzata come ("#codicePacco1, posX, posY; ...")
