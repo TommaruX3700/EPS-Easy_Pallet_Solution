@@ -6,7 +6,7 @@
       {
         "id": "6095c5becfb30472",
         "type": "tabs",
-        "dimension": 48.750761730652044,
+        "dimension": 40.52407068860451,
         "children": [
           {
             "id": "5b0459c33e08c7e2",
@@ -34,7 +34,7 @@
       {
         "id": "cf8146f643a28854",
         "type": "tabs",
-        "dimension": 51.24923826934796,
+        "dimension": 59.4759293113955,
         "children": [
           {
             "id": "02dc4c57e8a7ccd7",
@@ -127,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Architecture/headers/entities/geometry/Cell.h.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,6 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Architecture/headers/entities/geometry/Cell.h.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +166,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Architecture/headers/entities/geometry/Cell.h.md"
+              }
             }
           },
           {
@@ -196,8 +200,8 @@
   },
   "active": "bb4a8fc5ab1aace7",
   "lastOpenFiles": [
-    "Architecture/headers/logic/ottimizzazione.hpp.md",
     "Architecture/main.cpp.md",
+    "Architecture/headers/logic/ottimizzazione.hpp.md",
     "Architecture/headers/entities/geometry/Cell.h.md",
     "Architecture/headers/entities/geometry/Geometry.h.md",
     "Architecture/headers/entities/physical/3D_object.h.md",

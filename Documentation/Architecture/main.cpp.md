@@ -41,5 +41,5 @@ std::vector<Pallet*> palletGroup; //OUTPUT_MAIN a fini di debug e testing: da ca
 
 --- 
 
-INPUT: posizione del file json
+INPUT: posizione del file json, dimPalletX, dimPalletY
 OUTPUT: stringa lista organizzata come ("#codicePacco1, posX, posY; ...")
